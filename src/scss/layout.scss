@@ -1,21 +1,17 @@
-.site-container {
+.site {
   display: flex;
   flex-direction: column;
   max-width: 100%;
-  min-height: 100vh;
+  // min-height: 100vh;
   align-items: center;
-  justify-content: space-between
-}
+  justify-content: space-between;
+  &--content {
+    margin: 5% 0;
+    max-width: 1040px;
+  }
 
-.content {
-  margin: 5% 0;
-  max-width: 1040px;
-}
-
-.footer{
-}
-
-.bg-header {
-  background-color: white;
-  box-shadow: 0px 5px 10px -10px black;
+  &--footer {
+    padding-top: 10vh;
+    align-self: flex-start;
+  }
 }
