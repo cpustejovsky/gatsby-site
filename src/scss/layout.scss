@@ -2,15 +2,16 @@
   display: flex;
   flex-direction: column;
   max-width: 100%;
-  // min-height: 100vh;
   align-items: center;
   justify-content: space-between;
-  &--content {
+  &__content {
     margin: 5% 0;
     max-width: 1040px;
   }
-
-  &--footer {
+  &__section {
+    padding-top: 100px;
+  }
+  &__footer {
     padding-top: 10vh;
     align-self: flex-start;
   }

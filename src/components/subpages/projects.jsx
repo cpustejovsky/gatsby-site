@@ -1,10 +1,10 @@
 import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
 import BlogBefore from "../images/blog_before"
-import BlogAfter from "../images/blog_before"
+import BlogAfter from "../images/blog_after"
 
 const Projects = () => (
-  <Container>
+  <Container id="projects" className="site__section">
     <h1>Projects</h1>
     <p>
       The best way to learn is be doing and building. One of my weaknesses is

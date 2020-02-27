@@ -2,7 +2,7 @@ import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
 import Cpustejovsky from "../images/cpustejovsky"
 const About = () => (
-  <Container>
+  <Container id="about" className="site__section">
     <Row>
       <Col md={12}>
         <Row>

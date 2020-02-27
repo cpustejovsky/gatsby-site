@@ -4,7 +4,7 @@ import GrokkingAlgos from "../images/grokkingalgos"
 import GTD from "../images/gtd"
 import PragProg from "../images/pragprog"
 const ReadingList = () => (
-  <Container>
+  <Container id="reading" className="site__section">
     <br />
     <h1>Reading List</h1>
     <hr />
