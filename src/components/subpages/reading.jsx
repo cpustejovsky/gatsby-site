@@ -1,5 +1,6 @@
 import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
+import { Link } from "gatsby"
 import GrokkingAlgos from "../images/grokkingalgos"
 import GTD from "../images/gtd"
 import PragProg from "../images/pragprog"
@@ -17,13 +18,10 @@ const ReadingList = () => (
         <p>
           I really jive with the system that David Allen laid out and it's the
           system that I am rebuilding{" "}
-          <a
-            href="https://cpustejovsky-estuary.herokuapp.com/"
-            target="_blank"
-            rel="noreferrer"
+          <Link to="https://cpustejovsky-estuary.herokuapp.com/"
           >
             Estuary
-          </a>{" "}
+          </Link>
           around.
         </p>
       </Col>

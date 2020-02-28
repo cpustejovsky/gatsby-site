@@ -2,7 +2,7 @@ import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
 import BlogBefore from "../images/blog_before"
 import BlogAfter from "../images/blog_after"
-
+import { Link } from "gatsby"
 const Projects = () => (
   <Container id="projects" className="site__section">
     <h1>Projects</h1>
@@ -28,13 +28,9 @@ const Projects = () => (
     </p>
     <p>
       During Thanksgiving weekend 2019, I started reading
-      <a
-        href="https://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity/dp/0143126563"
-        target="_blank"
-        rel="noreferrer"
-      >
+      <Link to="https://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity/dp/0143126563">
         Getting Things Done by David Allen
-      </a>
+      </Link>
       . During the plane ride, I had the idea to turn my note taking app,
       Estuary, into an app that could facilitate the GTD process.
     </p>
@@ -44,22 +40,10 @@ const Projects = () => (
     </p>
     <ul>
       <li>
-        <a
-          href="https://cpustejovsky-estuary.herokuapp.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Estuary
-        </a>
+        <Link to="https://cpustejovsky-estuary.herokuapp.com/">Estuary</Link>
       </li>
       <li>
-        <a
-          href="https://github.com/cpustejovsky/estuary"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Code
-        </a>
+        <Link to="https://github.com/cpustejovsky/estuary">Code</Link>
       </li>
     </ul>
     <h4>Twitter Bot</h4>
@@ -73,12 +57,12 @@ const Projects = () => (
     </p>
     <ul>
       <li>
-        <a
-          href="https://www.npmjs.com/package/cpustejovsky-twitter-bot"
+        <Link
+          to="https://www.npmjs.com/package/cpustejovsky-twitter-bot"
           rel="noreferrer"
         >
           NPM link
-        </a>
+        </Link>
       </li>
     </ul>
     <h4>GDPR Toggler</h4>
@@ -86,13 +70,9 @@ const Projects = () => (
       Love it or hate it, GDPR is a reality for businesses so I created a jQuery
       script to dynamically display an opt-in option for countries where that
       option was required (I used this{" "}
-      <a
-        href="https://community.unbounce.com/t/how-to-use-geotargeting-to-display-a-visitors-location-on-a-page/5739"
-        target="_blank"
-        rel="noreferrer"
-      >
+      <Link to="https://community.unbounce.com/t/how-to-use-geotargeting-to-display-a-visitors-location-on-a-page/5739">
         AJAX script
-      </a>{" "}
+      </Link>{" "}
       to determine the country by IP address).{" "}
       <strong>This was my first real taste of working with jQuery.</strong> The
       scripts would need customization for the countries and for the specific
@@ -100,31 +80,19 @@ const Projects = () => (
     </p>
     <ul>
       <li>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://github.com/cpustejovsky/learnedingJavaScript/blob/master/useful_scripts/fieldHider.html"
-        >
+        <Link to="https://github.com/cpustejovsky/learnedingJavaScript/blob/master/useful_scripts/fieldHider.html">
           Field Hiding Option
-        </a>
+        </Link>
       </li>
       <li>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://github.com/cpustejovsky/learnedingJavaScript/blob/master/useful_scripts/radialToggler.html"
-        >
+        <Link to="https://github.com/cpustejovsky/learnedingJavaScript/blob/master/useful_scripts/radialToggler.html">
           Radial Toggling Option
-        </a>
+        </Link>
       </li>
       <li>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://unbounce.bitpay.com/landing/blockchain-and-chargebacks-ebook/"
-        >
+        <Link to="https://unbounce.bitpay.com/landing/blockchain-and-chargebacks-ebook/">
           Landing Page This is Used On
-        </a>
+        </Link>
       </li>
     </ul>
     <h4>Public/Private Key Signing App</h4>
@@ -143,13 +111,9 @@ const Projects = () => (
     </p>
     <ul>
       <li>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://github.com/cpustejovsky/CharlesPustejovsky-2019-v2"
-        >
+        <Link to="https://github.com/cpustejovsky/CharlesPustejovsky-2019-v2">
           Code
-        </a>
+        </Link>
       </li>
     </ul>
     <h4>BitPay Blog Redesign</h4>
@@ -161,11 +125,11 @@ const Projects = () => (
     <Row>
       <Col md={6}>
         <h5>Before</h5>
-        <BlogBefore/>
+        <BlogBefore />
       </Col>
       <Col md={6}>
         <h5>After</h5>
-        <BlogAfter/>
+        <BlogAfter />
       </Col>
     </Row>
 
@@ -181,16 +145,12 @@ const Projects = () => (
       can calculate their life together.
       <ul>
         <li>
-          <a href="/life-together-calculator">Calculator</a>
+          <Link to="/life-together-calculator">Calculator</Link>
         </li>
         <li>
-          <a
-            href="https://github.com/cpustejovsky/personalWebsite/blob/master/routes/lifeTogether.js"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <Link to="https://github.com/cpustejovsky/personalWebsite/blob/master/routes/lifeTogether.js">
             Code
-          </a>
+          </Link>
         </li>
       </ul>
     </p>

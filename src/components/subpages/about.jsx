@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap"
 import Cpustejovsky from "../images/cpustejovsky"
 const About = () => (
   <Container id="about" className="site__section">
+    <h1>About Me</h1>
     <Row>
       <Col md={12}>
         <Row>

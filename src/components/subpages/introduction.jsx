@@ -1,11 +1,12 @@
 import React from "react"
 import { Container, Row, Col, Button } from "react-bootstrap"
 import Ikigai from "../images/ikigai"
+import Resume from "../docs/Cpustejovsky_Resume.pdf"
+import { Link } from "gatsby"
 const Introduction = () => (
   <Container>
     <Row>
       <Col lg={6}>
-        {/* <Image src={ikigai} alt="ikigai" fluid/> */}
         <Ikigai />
       </Col>
       <Col lg={6}>
@@ -18,13 +19,9 @@ const Introduction = () => (
         <p>
           After years of searching and learning,
           <strong>
-            <a
-              href="https://medium.com/@cpustejovsky/do-what-you-love-445711971a3"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <Link to="https://medium.com/@cpustejovsky/do-what-you-love-445711971a3">
               I realized my ikigai is programming.
-            </a>
+            </Link>
           </strong>
           Since then I've been learning as much as I can about computer science,
           JavaScript, and how to use code to create things that help myself and
@@ -37,11 +34,7 @@ const Introduction = () => (
         </p>
         <hr />
         <div>
-          <a
-            href="/assets/docs/Cpustejovsky_Resume.pdf"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href={Resume}>
             <Button variant="primary">Resume</Button>
           </a>
         </div>

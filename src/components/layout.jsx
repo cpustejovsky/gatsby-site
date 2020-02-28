@@ -29,10 +29,10 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div className="site">
-        <main className="site--content">
+        <main className="site__content">
           {children}{" "}
-          <footer className="site--footer">
-            Cpustejovsky, {new Date().getFullYear()}
+          <footer className="site__footer">
+            Cpustejovsky <i class="far fa-thumbs-up"></i>, {new Date().getFullYear()}
           </footer>
         </main>
       </div>
