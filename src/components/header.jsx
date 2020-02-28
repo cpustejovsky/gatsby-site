@@ -6,8 +6,16 @@ import React from "react"
 const Header = () => (
   <>
     <style></style>
-    <Navbar bg="header" variant="light" expand="lg" sticky="top" className="mr-auto">
-      <Navbar.Brand href="/">Cpustejovsky</Navbar.Brand>
+    <Navbar
+      bg="header"
+      variant="light"
+      expand="lg"
+      sticky="top"
+      className="mr-auto"
+    >
+      <Navbar.Brand href="/">
+        Cpustejovsky <i class="far fa-thumbs-up"></i>
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav>
@@ -18,9 +26,21 @@ const Header = () => (
       </Navbar.Collapse>
       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
         <Nav>
-          <Nav.Link href="#">Icon</Nav.Link>
-          <Nav.Link href="#">Icon</Nav.Link>
-          <Nav.Link href="#">Icon</Nav.Link>
+          <Nav.Link href="https://github.com/cpustejovsky">
+            <i class="fab fa-github"></i>
+          </Nav.Link>
+          <Nav.Link href="https://dev.to/cpustejovsky">
+            <i class="fab fa-dev"></i>
+          </Nav.Link>
+          <Nav.Link href="https://twitter.com/CCPustejovsky">
+            <i class="fab fa-twitter-square"></i>
+          </Nav.Link>
+          <Nav.Link href="https://www.linkedin.com/in/cpustejovsky/">
+            <i class="fab fa-linkedin"></i>
+          </Nav.Link>
+          <Nav.Link href="mailto:charles.pustejovsky@gmail.com">
+            <i class="far fa-envelope"></i>
+          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
