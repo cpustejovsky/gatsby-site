@@ -1,160 +1,179 @@
 import React from "react"
-import { Container, Row, Col } from "react-bootstrap"
-import BlogBefore from "../images/blog_before"
-import BlogAfter from "../images/blog_after"
+import { Container, Row, Col, Collapse } from "react-bootstrap"
+import BlogOriginal from "../images/blog_original"
+import BlogRefresh from "../images/blog_refresh"
+import BlogHeadlessCMS from "../images/blog_headless_cms"
 import { Link } from "gatsby"
-const Projects = () => (
-  <Container id="projects" className="site__section">
-    <h1>Projects</h1>
-    <p>
-      The best way to learn is be doing and building. One of my weaknesses is
-      that I try to be a perfectionist and procrastinate. The beautiful thing is
-      that programming doesn't allow for that. I can't just read about
-      JavaScript or NodeJS, I have to build something to really learn it. So
-      here is a growing list or probjects I am working on:
-    </p>
-    <hr />
-    <h4>Estuary</h4>
-    <strong>
-      Estuary is currently a ME_N app that I built to record stream of
-      consciousness writing and notes/to-dos.
-    </strong>
-    <p></p>
-    <p>
-      This app is where I've put my NodeJS and MongoDB skills to the test. I've
-      set up routes, built models and schemas, learned how to send emails and
-      schedule cron jobs inside the app. I'm also setting up unit tests with
-      Mocha and deploying with MongoDB Compass and Heroku.
-    </p>
-    <p>
-      During Thanksgiving weekend 2019, I started reading
-      <Link to="https://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity/dp/0143126563">
-        Getting Things Done by David Allen
-      </Link>
-      . During the plane ride, I had the idea to turn my note taking app,
-      Estuary, into an app that could facilitate the GTD process.
-    </p>
-    <p>
-      That would have the dual benefit of cementing these practices for me and
-      also building a robust app that I can proudly show off in my portfolio.
-    </p>
-    <ul>
-      <li>
-        <Link to="https://cpustejovsky-estuary.herokuapp.com/">Estuary</Link>
-      </li>
-      <li>
-        <Link to="https://github.com/cpustejovsky/estuary">Code</Link>
-      </li>
-    </ul>
-    <h4>Twitter Bot</h4>
-    <p>
-      I spend too much time on Twitter so to minimize that time while keeping up
-      with the people and organizations I want to, I started work on a twitter
-      bot. I've published it as an NPM module which is running on this site and
-      sends me an email at 6:00 AM EST everyday with the tweets I want, having
-      already liked them and providing me the option to retweet and reply via a
-      link.
-    </p>
-    <ul>
-      <li>
-        <Link
-          to="https://www.npmjs.com/package/cpustejovsky-twitter-bot"
-          rel="noreferrer"
-        >
-          NPM link
-        </Link>
-      </li>
-    </ul>
-    <h4>GDPR Toggler</h4>
-    <p>
-      Love it or hate it, GDPR is a reality for businesses so I created a jQuery
-      script to dynamically display an opt-in option for countries where that
-      option was required (I used this{" "}
-      <Link to="https://community.unbounce.com/t/how-to-use-geotargeting-to-display-a-visitors-location-on-a-page/5739">
-        AJAX script
-      </Link>{" "}
-      to determine the country by IP address).{" "}
-      <strong>This was my first real taste of working with jQuery.</strong> The
-      scripts would need customization for the countries and for the specific
-      assets that are being displayed or hidden.
-    </p>
-    <ul>
-      <li>
-        <Link to="https://github.com/cpustejovsky/learnedingJavaScript/blob/master/useful_scripts/fieldHider.html">
-          Field Hiding Option
-        </Link>
-      </li>
-      <li>
-        <Link to="https://github.com/cpustejovsky/learnedingJavaScript/blob/master/useful_scripts/radialToggler.html">
-          Radial Toggling Option
-        </Link>
-      </li>
-      <li>
-        <Link to="https://unbounce.bitpay.com/landing/blockchain-and-chargebacks-ebook/">
-          Landing Page This is Used On
-        </Link>
-      </li>
-    </ul>
-    <h4>Public/Private Key Signing App</h4>
-    <p>
-      Application I worked on to better understand cryptography and asynchronous
-      code.{" "}
-      <strong>
-        This probject helped me get a better understanding of NodeJS's Crypto
-        module.
-      </strong>{" "}
-      It should go without saying, but{" "}
-      <strong>
-        do not use this! I'm rolling my own cryptography here for learning
-        purposes only.
-      </strong>
-    </p>
-    <ul>
-      <li>
-        <Link to="https://github.com/cpustejovsky/CharlesPustejovsky-2019-v2">
-          Code
-        </Link>
-      </li>
-    </ul>
-    <h4>BitPay Blog Redesign</h4>
-    <p>
-      As a content writer at BitPay, I guess I took owning the blog a bit too
-      literally and redesigned it. I forked Ghost's Casper theme and modified it
-      with the help of an amazing marketing designer to give it a modern look.
-    </p>
-    <Row>
-      <Col md={6}>
-        <h5>Before</h5>
-        <BlogBefore />
-      </Col>
-      <Col md={6}>
-        <h5>After</h5>
-        <BlogAfter />
-      </Col>
-    </Row>
 
-    <h4>Life Together Calculator</h4>
-    <p>
-      The first application I created which calculated how long my wife and I
-      had known each other and showed what percentage of our lives that was.{" "}
+const Projects = () => {
+  return (
+    <Container id="projects" className="site__section">
+      <h1>Projects</h1>
+      <p>
+        The best way to learn is be doing and building. One of my weaknesses is
+        that I try to be a perfectionist and procrastinate. The beautiful thing
+        is that programming doesn't allow for that. I can't just read about
+        JavaScript or NodeJS, I have to build something to really learn it. So
+        here is a growing list or probjects I am working on:
+      </p>
+      <hr />
+      <h4>Estuary</h4>
       <strong>
-        It gave me hands on experience with working with the DOM and
-        JavaScript's Date Object.
-      </strong>{" "}
-      I have since then made it interactive so anyone with a significant other
-      can calculate their life together.
+        Estuary is currently a ME_N app that I built to record stream of
+        consciousness writing and notes/to-dos.
+      </strong>
+      <p></p>
+      <p>
+        This app is where I've put my NodeJS and MongoDB skills to the test.
+        I've set up routes, built models and schemas, learned how to send emails
+        and schedule cron jobs inside the app. I'm also setting up unit tests
+        with Mocha and deploying with MongoDB Compass and Heroku.
+      </p>
+      <p>
+        During Thanksgiving weekend 2019, I started reading
+        <Link to="https://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity/dp/0143126563">
+          Getting Things Done by David Allen
+        </Link>
+        . During the plane ride, I had the idea to turn my note taking app,
+        Estuary, into an app that could facilitate the GTD process.
+      </p>
+      <p>
+        That would have the dual benefit of cementing these practices for me and
+        also building a robust app that I can proudly show off in my portfolio.
+      </p>
       <ul>
         <li>
-          <Link to="/life-together-calculator">Calculator</Link>
+          <Link to="https://cpustejovsky-estuary.herokuapp.com/">Estuary</Link>
         </li>
         <li>
-          <Link to="https://github.com/cpustejovsky/personalWebsite/blob/master/routes/lifeTogether.js">
+          <Link to="https://github.com/cpustejovsky/estuary">Code</Link>
+        </li>
+      </ul>
+      <h4>Twitter Bot</h4>
+      <p>
+        I spend too much time on Twitter so to minimize that time while keeping
+        up with the people and organizations I want to, I started work on a
+        twitter bot. I've published it as an NPM module which is running on this
+        site and sends me an email at 6:00 AM EST everyday with the tweets I
+        want, having already liked them and providing me the option to retweet
+        and reply via a link.
+      </p>
+      <ul>
+        <li>
+          <Link
+            to="https://www.npmjs.com/package/cpustejovsky-twitter-bot"
+            rel="noreferrer"
+          >
+            NPM link
+          </Link>
+        </li>
+      </ul>
+      <h4>GDPR Toggler</h4>
+      <p>
+        Love it or hate it, GDPR is a reality for businesses so I created a
+        jQuery script to dynamically display an opt-in option for countries
+        where that option was required (I used this{" "}
+        <Link to="https://community.unbounce.com/t/how-to-use-geotargeting-to-display-a-visitors-location-on-a-page/5739">
+          AJAX script
+        </Link>{" "}
+        to determine the country by IP address).{" "}
+        <strong>This was my first real taste of working with jQuery.</strong>{" "}
+        The scripts would need customization for the countries and for the
+        specific assets that are being displayed or hidden.
+      </p>
+      <ul>
+        <li>
+          <Link to="https://github.com/cpustejovsky/learnedingJavaScript/blob/master/useful_scripts/fieldHider.html">
+            Field Hiding Option
+          </Link>
+        </li>
+        <li>
+          <Link to="https://github.com/cpustejovsky/learnedingJavaScript/blob/master/useful_scripts/radialToggler.html">
+            Radial Toggling Option
+          </Link>
+        </li>
+        <li>
+          <Link to="https://unbounce.bitpay.com/landing/blockchain-and-chargebacks-ebook/">
+            Landing Page This is Used On
+          </Link>
+        </li>
+      </ul>
+      <h4>Public/Private Key Signing App</h4>
+      <p>
+        Application I worked on to better understand cryptography and
+        asynchronous code.{" "}
+        <strong>
+          This probject helped me get a better understanding of NodeJS's Crypto
+          module.
+        </strong>{" "}
+        It should go without saying, but{" "}
+        <strong>
+          do not use this! I'm rolling my own cryptography here for learning
+          purposes only.
+        </strong>
+      </p>
+      <ul>
+        <li>
+          <Link to="https://github.com/cpustejovsky/CharlesPustejovsky-2019-v2">
             Code
           </Link>
         </li>
       </ul>
-    </p>
-  </Container>
-)
+      <h4>BitPay Blog Redesign</h4>
+      <div>
+        <p>
+          As a content writer at BitPay, I guess I took owning the blog a bit
+          too literally and redesigned it. I forked Ghost's Casper theme and
+          modified it with the help of an amazing marketing designer to give it
+          a modern look.
+        </p>
+        <Row>
+          <Col md={6} className="projects__section">
+            <h3>Original</h3>
+            <BlogOriginal />
+          </Col>
+          <Col md={6} className="projects__section">
+            <h3>CSS Redesign</h3>
+            <BlogRefresh />
+          </Col>
+          <Col md={12}>
+            <p>
+              Then, to create design consistency and open up the site for copy
+              edits without a full development process, I used Ghost's Content
+              API to turn Ghost into a headless CMS and add the blog to BitPay's
+              Nuxt.js site.
+            </p>
+          </Col>
+          <Col md={12} className="projects__section">
+            <h3>Headless CMS</h3>
+            <BlogHeadlessCMS />
+          </Col>
+        </Row>
+      </div>
+
+      <h4>Life Together Calculator</h4>
+      <p>
+        The first application I created which calculated how long my wife and I
+        had known each other and showed what percentage of our lives that was.{" "}
+        <strong>
+          It gave me hands on experience with working with the DOM and
+          JavaScript's Date Object.
+        </strong>{" "}
+        I have since then made it interactive so anyone with a significant other
+        can calculate their life together.
+        <ul>
+          <li>
+            <Link to="/life-together-calculator">Calculator</Link>
+          </li>
+          <li>
+            <Link to="https://github.com/cpustejovsky/personalWebsite/blob/master/routes/lifeTogether.js">
+              Code
+            </Link>
+          </li>
+        </ul>
+      </p>
+    </Container>
+  )
+}
 
 export default Projects
