@@ -18,11 +18,21 @@
 }
 
 .projects {
+  &__collapse-header {
+    cursor: pointer;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-top: 1vh;
+  }
   &__section {
     text-align: center;
   }
   &__image {
-    box-shadow: 0px 2px 10px #818181;    margin: 2%;
+    box-shadow: 0px 2px 10px #818181;
+    margin: 2%;
     border-radius: 15px;
   }
 }
