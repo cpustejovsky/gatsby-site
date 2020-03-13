@@ -15,7 +15,12 @@ const BlogHeadlessCMS = () => {
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} className="projects__image"/>
+  return (
+    <Img
+      fluid={data.placeholderImage.childImageSharp.fluid}
+      className="projects__image"
+    />
+  )
 }
 
 export default BlogHeadlessCMS

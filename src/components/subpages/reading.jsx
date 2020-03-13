@@ -18,15 +18,12 @@ const ReadingList = () => (
         <p>
           I really jive with the system that David Allen laid out and it's the
           system that I am rebuilding{" "}
-          <Link to="https://cpustejovsky-estuary.herokuapp.com/"
-          >
-            Estuary
-          </Link>
+          <Link to="https://cpustejovsky-estuary.herokuapp.com/">Estuary</Link>
           around.
         </p>
       </Col>
     </Row>
-    <hr style={{border: "1px solid #bababa"}} />
+    <hr style={{ border: "1px solid #bababa" }} />
     <Row>
       <Col md={4}>
         <PragProg />
@@ -40,7 +37,7 @@ const ReadingList = () => (
         </p>
       </Col>
     </Row>
-    <hr style={{border: "1px solid #bababa"}} />
+    <hr style={{ border: "1px solid #bababa" }} />
     <Row>
       <Col md={4}>
         <GrokkingAlgos />

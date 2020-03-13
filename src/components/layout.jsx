@@ -32,7 +32,8 @@ const Layout = ({ children }) => {
         <main className="site__content">
           {children}{" "}
           <footer className="site__footer">
-            Cpustejovsky <i class="far fa-thumbs-up"></i>, {new Date().getFullYear()}
+            Cpustejovsky <i class="far fa-thumbs-up"></i>,{" "}
+            {new Date().getFullYear()}
           </footer>
         </main>
       </div>

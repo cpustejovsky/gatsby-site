@@ -11,6 +11,7 @@ const Projects = () => {
   const [gdpr, openGdpr] = useState(false)
   const [signingApp, openSigningApp] = useState(false)
   const [blog, openBlog] = useState(false)
+  const [headlessCms, openHeadlessCms] = useState(false)
   const [lifeTogetherCalculator, openLifeTogetherCalculator] = useState(false)
   return (
     <Container id="projects" className="site__section">
@@ -22,7 +23,10 @@ const Projects = () => {
         JavaScript, React, or NodeJS, I have to build something to really learn
         it.
       </p>
-      <strong>So here is a growing list of probjects I am working on (click for details)</strong>
+      <strong>
+        So here is a growing list of probjects I am working on (click for
+        details)
+      </strong>
       <hr />
       <div
         onClick={() => openEstuary(!estuary)}
@@ -36,20 +40,19 @@ const Projects = () => {
       <Collapse in={estuary}>
         <div id="estuary">
           <p>
-            Estuary is a ME_N app that I built to record stream of
-            consciousness writing and notes/to-dos. Here I put my NodeJS and MongoDB skills to the test.
-            I've set up routes, built models and schemas, learned how to send
-            emails and schedule cron jobs. I'm also setting up
-            unit tests with Mocha and deploying with MongoDB Compass and Heroku.
+            Estuary is a ME_N app that I built to record stream of consciousness
+            writing and notes/to-dos. Here I put my NodeJS and MongoDB skills to
+            the test. I've set up routes, built models and schemas, learned how
+            to send emails and schedule cron jobs. I'm also setting up unit
+            tests with Mocha and deploying with MongoDB Compass and Heroku.
           </p>
           <p>
-            During Thanksgiving weekend 2019, I started reading
-            {" "}
+            During Thanksgiving weekend 2019, I started reading{" "}
             <Link to="https://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity/dp/0143126563">
               Getting Things Done by David Allen
-            </Link>
-            {" "}
-            and had the idea to turn Estuary into a MERN app that could facilitate the GTD process.
+            </Link>{" "}
+            and had the idea to turn Estuary into a MERN app that could
+            facilitate the GTD process.
           </p>
           <p>
             That would have the dual benefit of cementing these practices for me
@@ -103,18 +106,15 @@ const Projects = () => {
       </Collapse>
       <div
         onClick={() => openBlog(!blog)}
-        aria-expanded={blog}
         className="projects__collapse-header"
       >
-        <h4>Blog Redesign and Headless CMS</h4> <p>(CSS, Nuxt.js)</p>
+        <h4>BitPay Blog Redesign</h4> <p>(CSS)</p>
       </div>
       <Collapse in={blog}>
         <div>
           <p>
-            As the content writer at BitPay, I guess I took owning the blog a
-            bit too literally and redesigned it. I forked Ghost's Casper theme
-            and modified it with the help of an amazing marketing designer to
-            give it a modern look.
+            I forked Ghost's Casper theme and modified it with the help of an
+            amazing marketing designer to give it a modern look.
           </p>
           <Row>
             <Col md={6} className="projects__section">
@@ -125,19 +125,29 @@ const Projects = () => {
               <h3>CSS Redesign</h3>
               <BlogRefresh />
             </Col>
-            <Col md={12}>
-              <p>
-                Then, to create design consistency and open up the site for copy
-                edits without a full development process, I used Ghost's Content
-                API to turn Ghost into a headless CMS and add the blog to
-                BitPay's Nuxt.js site.
-              </p>
-            </Col>
-            <Col md={12} className="projects__section">
-              <h3>Headless CMS</h3>
-              <BlogHeadlessCMS />
-            </Col>
           </Row>
+        </div>
+      </Collapse>
+      <div
+        onClick={() => openHeadlessCms(!headlessCms)}
+        className="projects__collapse-header"
+      >
+        <h4>BitPay Headless CMS</h4> <p>(Nuxt.js)</p>
+      </div>
+      <Collapse in={headlessCms}>
+        <div>
+          {" "}
+          <Col md={12}>
+            <p>
+              I used Ghost's Content API to turn Ghost into a headless CMS and
+              add the blog to BitPay's Nuxt.js site. This created design
+              consistency and allowed non-developers to make basic copy edits to
+              BitPay's site for copy edits without a full development process.
+            </p>
+          </Col>
+          <Col md={12} className="projects__section">
+            <BlogHeadlessCMS />
+          </Col>
         </div>
       </Collapse>
       <div

@@ -71,17 +71,16 @@ const About = () => {
             <h4>Interests</h4>
           </div>
           <Collapse in={interests}>
-                      <ul>
-            <li>Cybersecurity</li>
-            <li>Functional Programming</li>
-            <li>Hacking Productivity</li>
-            <li>Accessibility in Design</li>
-            <li>Classics (Greco-Roman)</li>
-            <li>Tolkien, Science Fiction, and Fantasy</li>
-            <li>Philosophy</li>
-          </ul>
+            <ul>
+              <li>Cybersecurity</li>
+              <li>Functional Programming</li>
+              <li>Hacking Productivity</li>
+              <li>Accessibility in Design</li>
+              <li>Classics (Greco-Roman)</li>
+              <li>Tolkien, Science Fiction, and Fantasy</li>
+              <li>Philosophy</li>
+            </ul>
           </Collapse>
-
         </Col>
       </Row>
     </Container>
