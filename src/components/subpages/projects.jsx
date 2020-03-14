@@ -3,7 +3,6 @@ import { Container, Row, Col, Collapse } from "react-bootstrap"
 import BlogOriginal from "../images/blog_original"
 import BlogRefresh from "../images/blog_refresh"
 import BlogHeadlessCMS from "../images/blog_headless_cms"
-import { Link } from "gatsby"
 
 const Projects = () => {
   const [estuary, openEstuary] = useState(false)
@@ -48,9 +47,12 @@ const Projects = () => {
           </p>
           <p>
             During Thanksgiving weekend 2019, I started reading{" "}
-            <Link to="https://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity/dp/0143126563">
+            <a
+              rel="noreferrer noopener"
+              href="https://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity/dp/0143126563"
+            >
               Getting Things Done by David Allen
-            </Link>{" "}
+            </a>{" "}
             and had the idea to turn Estuary into a MERN app that could
             facilitate the GTD process.
           </p>
@@ -61,12 +63,20 @@ const Projects = () => {
           </p>
           <ul>
             <li>
-              <Link to="https://cpustejovsky-estuary.herokuapp.com/">
+              <a
+                rel="noreferrer noopener"
+                href="https://cpustejovsky-estuary.herokuapp.com/"
+              >
                 Estuary
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="https://github.com/cpustejovsky/estuary">Code</Link>
+              <a
+                rel="noreferrer noopener"
+                href="https://github.com/cpustejovsky/estuary"
+              >
+                Code
+              </a>
             </li>
           </ul>
         </div>
@@ -93,12 +103,20 @@ const Projects = () => {
             other can calculate their life together.
             <ul>
               <li>
-                <Link to="/life-together-calculator">Calculator</Link>
+                <a
+                  href="https://life-together-calculator.herokuapp.com/"
+                  rel="noreferrer noopener"
+                >
+                  Calculator
+                </a>
               </li>
               <li>
-                <Link to="https://github.com/cpustejovsky/personalWebsite/blob/master/routes/lifeTogether.js">
+                <a
+                  href="https://github.com/cpustejovsky/life-together-calculator"
+                  rel="noreferrer noopener"
+                >
                   Code
-                </Link>
+                </a>
               </li>
             </ul>
           </p>
@@ -171,12 +189,12 @@ const Projects = () => {
           </p>
           <ul>
             <li>
-              <Link
-                to="https://www.npmjs.com/package/cpustejovsky-twitter-bot"
-                rel="noreferrer"
+              <a
+                rel="noreferrer noopener"
+                href="https://www.npmjs.com/package/cpustejovsky-twitter-bot"
               >
                 NPM link
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
@@ -206,9 +224,12 @@ const Projects = () => {
           </p>
           <ul>
             <li>
-              <Link to="https://github.com/cpustejovsky/CharlesPustejovsky-2019-v2">
+              <a
+                rel="noreferrer noopener"
+                href="https://github.com/cpustejovsky/CharlesPustejovsky-2019-v2"
+              >
                 Code
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
@@ -227,9 +248,9 @@ const Projects = () => {
             Love it or hate it, GDPR is a reality for businesses so I created a
             jQuery script to dynamically display an opt-in option for countries
             where that option was required (I used this{" "}
-            <Link to="https://community.unbounce.com/t/how-to-use-geotargeting-to-display-a-visitors-location-on-a-page/5739">
+            <a rel="noreferrer noopener" href="https://community.unbounce.com/t/how-to-use-geotargeting-to-display-a-visitors-location-on-a-page/5739">
               AJAX script
-            </Link>{" "}
+            </a>{" "}
             to determine the country by IP address).{" "}
             <strong>
               This was my first real taste of working with jQuery.
@@ -239,19 +260,19 @@ const Projects = () => {
           </p>
           <ul>
             <li>
-              <Link to="https://github.com/cpustejovsky/learnedingJavaScript/blob/master/useful_scripts/fieldHider.html">
+              <a rel="noreferrer noopener" href="https://github.com/cpustejovsky/learnedingJavaScript/blob/master/useful_scripts/fieldHider.html">
                 Field Hiding Option
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="https://github.com/cpustejovsky/learnedingJavaScript/blob/master/useful_scripts/radialToggler.html">
+              <a rel="noreferrer noopener" href="https://github.com/cpustejovsky/learnedingJavaScript/blob/master/useful_scripts/radialToggler.html">
                 Radial Toggling Option
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="https://unbounce.bitpay.com/landing/blockchain-and-chargebacks-ebook/">
+              <a rel="noreferrer noopener" href="https://unbounce.bitpay.com/landing/blockchain-and-chargebacks-ebook/">
                 Landing Page This is Used On
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

@@ -1,6 +1,5 @@
 import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
-import { Link } from "gatsby"
 import GrokkingAlgos from "../images/grokkingalgos"
 import GTD from "../images/gtd"
 import PragProg from "../images/pragprog"
@@ -18,8 +17,11 @@ const ReadingList = () => (
         <p>
           I really jive with the system that David Allen laid out and it's the
           system that I am rebuilding{" "}
-          <Link to="https://cpustejovsky-estuary.herokuapp.com/">Estuary</Link>
+          <a rel="noreferrer noopener" href="https://cpustejovsky-estuary.herokuapp.com/">Estuary</a>{" "}
           around.
+        </p>
+        <p>
+          Buy on <a rel="noreferrer noopener" href="https://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity/dp/0143126563">Amazon</a>
         </p>
       </Col>
     </Row>
@@ -35,6 +37,9 @@ const ReadingList = () => (
           the 20th anniversary update came out. I'm looking forward to going
           through the advice David Thomas and Andrew Hunt have to offer.
         </p>
+        <p>
+          Buy on <a rel="noreferrer noopener" href="https://pragprog.com/book/tpp20/the-pragmatic-programmer-20th-anniversary-edition">The Pragmatic Bookshelf</a>
+        </p>
       </Col>
     </Row>
     <hr style={{ border: "1px solid #bababa" }} />
@@ -49,6 +54,9 @@ const ReadingList = () => (
           would have in a traditional computer science course at a university.
           Grokking Algorithms by Aditya Y. Bhargava is a great place to start
           that journey.
+        </p>
+        <p>
+          Buy on <a rel="noreferrer noopener" href="https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230">Amazon</a>
         </p>
       </Col>
     </Row>

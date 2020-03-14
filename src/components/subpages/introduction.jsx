@@ -2,7 +2,6 @@ import React from "react"
 import { Container, Row, Col, Button } from "react-bootstrap"
 import Ikigai from "../images/ikigai"
 import Resume from "../docs/Cpustejovsky_Resume.pdf"
-import { Link } from "gatsby"
 const Introduction = () => (
   <Container>
     <Row>
@@ -20,9 +19,9 @@ const Introduction = () => (
         <p>
           After years of searching,{" "}
           <strong>
-            <Link to="https://medium.com/@cpustejovsky/do-what-you-love-445711971a3">
+            <a rel="noreferrer noopener" href="https://medium.com/@cpustejovsky/do-what-you-love-445711971a3">
               I realized my ikigai is programming.
-            </Link>{" "}
+            </a>{" "}
           </strong>
           Since then I've learned as much as I can about computer science,
           JavaScript, and how to use code to create things that help others.
