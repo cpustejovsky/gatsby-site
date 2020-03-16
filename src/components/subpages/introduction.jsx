@@ -28,7 +28,7 @@ const Introduction = () => (
           <strong>
             <a
               rel="noreferrer noopener"
-              href="https://medium.com/@cpustejovsky/do-what-you-love-445711971a3"
+              href="https://dev.to/cpustejovsky/a-month-of-development-work-52gh"
             >
               I realized my ikigai is programming.
             </a>{" "}
