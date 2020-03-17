@@ -19,19 +19,8 @@ export default class resources extends Component {
         <Row>
           <Col md={12}>
             <h1>Resources</h1>
-            <hr />
+            <hr/>
             {parse(this.state.data)}
-            <hr />
-            <strong>
-              Data provided
-              with the{" "}
-              <a
-                rel="noreferrer noopener"
-                href="https://docs.dev.to/api/"
-              >
-                DEV Community API
-              </a>
-            </strong>
           </Col>
         </Row>
       </Container>
