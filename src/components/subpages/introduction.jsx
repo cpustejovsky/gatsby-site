@@ -4,7 +4,7 @@ import Ikigai from "../images/ikigai"
 import Resume from "../docs/Cpustejovsky_Resume.pdf"
 const Introduction = () => (
   <Container>
-    <Row>
+    <Row className="introduction">
       <Col lg={6}>
         <Ikigai />
       </Col>
@@ -13,6 +13,7 @@ const Introduction = () => (
         <p>
           I'm looking for a front-end or full-stack developer role to align my
           career path with my{" "}
+          <strong>
           <a
             rel="noreferrer noopener"
             target="_blank"
@@ -20,6 +21,7 @@ const Introduction = () => (
           >
             ikigai
           </a>
+          </strong>
           . Ikigai is something you're passionate about, talented at, can have a
           career in, and can help the world with.
         </p>
@@ -36,7 +38,7 @@ const Introduction = () => (
           </strong>
           Since then I've learned as much as I can about computer science,
           JavaScript, and how to use code to create things that help others
-          while building <a href="#projects">projects</a> along the way.
+          while building <strong><a href="#projects">projects</a></strong> along the way.
         </p>
         <hr />
         <div>

@@ -16,7 +16,9 @@
     align-self: flex-start;
   }
 }
-
+.introduction {
+  align-items: center;
+}
 .projects {
   &__collapse-header {
     cursor: pointer;

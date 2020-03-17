@@ -15,6 +15,7 @@ const About = () => {
             </Col>
           </Row>
           <br />
+          <p>My name is Charles Pustejovsky.</p>
           <p>
             I'm a perpetual learner. I love learning new things and exploring
             new ideas. I never get bored even when reading a SCOTUS statement or
@@ -77,8 +78,9 @@ const About = () => {
               <li>Hacking Productivity</li>
               <li>Accessibility in Design</li>
               <li>Classics (Greco-Roman)</li>
-              <li>Tolkien, Science Fiction, and Fantasy</li>
+              <li>Science Fiction and Fantasy</li>
               <li>Philosophy</li>
+              <li>Baking</li>
             </ul>
           </Collapse>
         </Col>
