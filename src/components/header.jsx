@@ -22,7 +22,7 @@ const Header = () => (
           <Nav.Link href="#about">About Me</Nav.Link>
           <Nav.Link href="#projects">Projects</Nav.Link>
           <Nav.Link href="#reading">Reading List</Nav.Link>
-          <Nav.Link href="#resources" rel="noreferrer noopener">Resources</Nav.Link>
+          <Nav.Link href="https://dev.to/cpustejovsky/resources-2igo" target="_blank" rel="noreferrer noopener">Resources</Nav.Link>
         </Nav>
       </Navbar.Collapse>
       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
