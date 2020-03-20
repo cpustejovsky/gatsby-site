@@ -17,8 +17,7 @@ const About = () => {
           <br />
           <p>My name is Charles Pustejovsky.</p>
           <p>
-            I'm a perpetual learner. I love learning new things and exploring
-            new ideas. I never get bored even when reading a SCOTUS statement or
+            I'm a perpetual learner. I never get bored even when reading a SCOTUS statement or
             an academic essay on grain shipments or the most dry technical
             documentation.
           </p>

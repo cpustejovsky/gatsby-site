@@ -16,9 +16,9 @@ const Projects = () => {
     <Container id="projects" className="site__section">
       <h1>Projects</h1>
       <p>
-        The best way to learn is by doing and that means building probjects. One
-        of my weaknesses is that I try to be a perfectionist and procrastinate.
-        Thankfully programming doesn't allow for that. I can't just read about
+        The best way to learn is by doing and that means building things. One of
+        my weaknesses is that I try to be a perfectionist and procrastinate.
+        Thankfully, programming doesn't allow for that. I can't just read about
         JavaScript, React, or NodeJS, I have to build something to really learn
         it.
       </p>
@@ -49,6 +49,7 @@ const Projects = () => {
             During Thanksgiving weekend 2019, I started reading{" "}
             <a
               rel="noreferrer noopener"
+              target="_blank"
               href="https://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity/dp/0143126563"
             >
               Getting Things Done by David Allen
@@ -94,32 +95,35 @@ const Projects = () => {
           <p>
             The first application I created which calculated how long my wife
             and I had known each other and showed what percentage of our lives
-            that was.{" "}
-            <strong>
-              It gave me hands on experience with working with the DOM and
-              JavaScript's Date Object.
-            </strong>{" "}
-            I have since then made it interactive so anyone with a significant
-            other can calculate their life together.
-            <ul>
-              <li>
-                <a
-                  href="https://life-together-calculator.herokuapp.com/"
-                  rel="noreferrer noopener"
-                >
-                  Calculator
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/cpustejovsky/life-together-calculator"
-                  rel="noreferrer noopener"
-                >
-                  Code
-                </a>
-              </li>
-            </ul>
+            that was. It gave me hands on experience with working with the DOM
+            and JavaScript's Date Object.
           </p>
+          <p>
+            I then made it interactive so anyone with a significant other can
+            calculate their life together.
+          </p>
+          <p>
+            Most recently, I've rebuilt the app in React and allowed it to
+            calculate any kind of frienship or personal relationship.
+          </p>
+          <ul>
+            <li>
+              <a
+                href="https://life-together-calculator.herokuapp.com/"
+                rel="noreferrer noopener"
+              >
+                Calculator
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/cpustejovsky/life-together-calculator"
+                rel="noreferrer noopener"
+              >
+                Code
+              </a>
+            </li>
+          </ul>
         </div>
       </Collapse>
       <div
@@ -157,10 +161,13 @@ const Projects = () => {
           {" "}
           <Col md={12}>
             <p>
-              I used Ghost's Content API to turn Ghost into a headless CMS and
-              add the blog to BitPay's Nuxt.js site. This created design
-              consistency and allowed non-developers to make basic copy edits to
-              BitPay's site for copy edits without a full development process.
+              I used Ghost's Content API to turn BitPay's blog into a headless
+              CMS and add the blog to BitPay's Nuxt.js site.
+            </p>
+            <p>
+              This created design consistency and allowed non-developers to make
+              basic copy edits to BitPay's site without a full development
+              process.
             </p>
           </Col>
           <Col md={12} className="projects__section">
@@ -248,7 +255,10 @@ const Projects = () => {
             Love it or hate it, GDPR is a reality for businesses so I created a
             jQuery script to dynamically display an opt-in option for countries
             where that option was required (I used this{" "}
-            <a rel="noreferrer noopener" href="https://community.unbounce.com/t/how-to-use-geotargeting-to-display-a-visitors-location-on-a-page/5739">
+            <a
+              rel="noreferrer noopener"
+              href="https://community.unbounce.com/t/how-to-use-geotargeting-to-display-a-visitors-location-on-a-page/5739"
+            >
               AJAX script
             </a>{" "}
             to determine the country by IP address).{" "}
@@ -260,17 +270,26 @@ const Projects = () => {
           </p>
           <ul>
             <li>
-              <a rel="noreferrer noopener" href="https://github.com/cpustejovsky/learnedingJavaScript/blob/master/useful_scripts/fieldHider.html">
+              <a
+                rel="noreferrer noopener"
+                href="https://github.com/cpustejovsky/learnedingJavaScript/blob/master/useful_scripts/fieldHider.html"
+              >
                 Field Hiding Option
               </a>
             </li>
             <li>
-              <a rel="noreferrer noopener" href="https://github.com/cpustejovsky/learnedingJavaScript/blob/master/useful_scripts/radialToggler.html">
+              <a
+                rel="noreferrer noopener"
+                href="https://github.com/cpustejovsky/learnedingJavaScript/blob/master/useful_scripts/radialToggler.html"
+              >
                 Radial Toggling Option
               </a>
             </li>
             <li>
-              <a rel="noreferrer noopener" href="https://unbounce.bitpay.com/landing/blockchain-and-chargebacks-ebook/">
+              <a
+                rel="noreferrer noopener"
+                href="https://unbounce.bitpay.com/landing/blockchain-and-chargebacks-ebook/"
+              >
                 Landing Page This is Used On
               </a>
             </li>
