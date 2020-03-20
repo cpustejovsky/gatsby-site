@@ -5,6 +5,10 @@ export default function HTML(props) {
   return (
     <html {...props.htmlAttributes}>
       <head>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-147269757-1"
+        ></script>
         <link
           rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
