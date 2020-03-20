@@ -1,9 +1,12 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "cpustejovsky-gatsby-site",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "cpustejovsky personal site built with GatsbyJS",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "cpustejovsky <charles.pustejovsky@gmail.com>",
+  "engines": {
+    "node":"12.14.x"
+  },
   "dependencies": {
     "bootstrap": "^4.4.1",
     "gatsby": "^2.18.12",
