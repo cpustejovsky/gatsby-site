@@ -6,6 +6,7 @@ import BlogHeadlessCMS from "../images/blog_headless_cms"
 
 const Projects = () => {
   const [estuary, openEstuary] = useState(false)
+  const [bearsAndBearMarkets, openBearsAndBearMarkets] = useState(false)
   const [twitterBot, openTwitterBot] = useState(false)
   const [gdpr, openGdpr] = useState(false)
   const [signingApp, openSigningApp] = useState(false)
@@ -126,6 +127,54 @@ const Projects = () => {
           </ul>
         </div>
       </Collapse>
+      <div
+        onClick={() => openBearsAndBearMarkets(!bearsAndBearMarkets)}
+        aria-expanded={lifeTogetherCalculator}
+        className="projects__collapse-header"
+      >
+        <h4>Bears and Bear Markets</h4>
+        <p>(ReactJS)</p>
+      </div>
+      <Collapse in={bearsAndBearMarkets}>
+        <div>
+          <p>
+            At my previous company, people often wanted to see the current price
+            of Bitcoin or some kind of financial news. I'd rather have a Panda
+            livestream playing in the breakroom. To balance both these desires
+            out, I thought of thia app which combines both things.
+          </p>
+          <p>
+            This app is making use of{" "}
+            <a
+              href="https://polygon.io/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Polygon.io's
+            </a>{" "}
+            API along with Redux.
+          </p>
+          <ul>
+            <li>
+              <a
+                href="https://bears-and-bear-markets.herokuapp.com/"
+                rel="noreferrer noopener"
+              >
+                Bears and Bear Markets
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/cpustejovsky/bears-and-bear-markets"
+                rel="noreferrer noopener"
+              >
+                Code
+              </a>
+            </li>
+          </ul>
+        </div>
+      </Collapse>
+
       <div
         onClick={() => openBlog(!blog)}
         className="projects__collapse-header"
