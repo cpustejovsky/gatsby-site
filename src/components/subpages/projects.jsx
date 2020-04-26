@@ -35,17 +35,10 @@ const Projects = () => {
         className="projects__collapse-header"
       >
         <h4>Estuary</h4>
-        <p>(NodeJS, MongoDB)</p>
+        <p>(React, NodeJS, MongoDB)</p>
       </div>
       <Collapse in={estuary}>
         <div id="estuary">
-          <p>
-            Estuary is a ME_N app that I built to record stream of consciousness
-            writing and notes/to-dos. Here I put my NodeJS and MongoDB skills to
-            the test. I've set up routes, built models and schemas, learned how
-            to send emails and schedule cron jobs. I'm also setting up unit
-            tests with Mocha and deploying with MongoDB Compass and Heroku.
-          </p>
           <p>
             During Thanksgiving weekend 2019, I started reading{" "}
             <a
@@ -62,6 +55,16 @@ const Projects = () => {
             That would have the dual benefit of cementing these practices for me
             and also building a robust app that I can proudly show off in my
             portfolio.
+          </p>
+          <p>
+            So far, it's a MERN app that can record stream of consciousness
+            writing and notes and pluck notes you want to save from your stream
+            of conscious writing.
+          </p>
+          <p>
+            I'll be expanding and refining it over the course of 2020, both to
+            improve my development skills and create a handy tool for being a
+            more effective developer and person.
           </p>
           <ul>
             <li>
