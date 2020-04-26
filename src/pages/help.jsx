@@ -13,7 +13,7 @@ const IndexPage = () => (
       <main className="site__landing">
         <Help />
         <footer className="site__footer">
-          Cpustejovsky <i class="far fa-thumbs-up"></i>,{" "}
+          Cpustejovsky <i className="far fa-thumbs-up"></i>,{" "}
           {new Date().getFullYear()}
         </footer>
       </main>

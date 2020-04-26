@@ -14,25 +14,25 @@ const Header = () => (
       className="mr-auto"
     >
       <Navbar.Brand href="/">
-        Cpustejovsky <i class="far fa-thumbs-up"></i>
+        Cpustejovsky <i className="far fa-thumbs-up"></i>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
         <Nav>
           <Nav.Link href="https://github.com/cpustejovsky">
-            <i class="fab fa-github"></i>
+            <i className="fab fa-github"></i>
           </Nav.Link>
           <Nav.Link href="https://dev.to/cpustejovsky">
-            <i class="fab fa-dev"></i>
+            <i className="fab fa-dev"></i>
           </Nav.Link>
           <Nav.Link href="https://twitter.com/CCPustejovsky">
-            <i class="fab fa-twitter-square"></i>
+            <i className="fab fa-twitter-square"></i>
           </Nav.Link>
           <Nav.Link href="https://www.linkedin.com/in/cpustejovsky/">
-            <i class="fab fa-linkedin"></i>
+            <i className="fab fa-linkedin"></i>
           </Nav.Link>
           <Nav.Link href="mailto:charles.pustejovsky@gmail.com">
-            <i class="far fa-envelope"></i>
+            <i className="far fa-envelope"></i>
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>

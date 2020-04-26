@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "cpustejovsky <charles.pustejovsky@gmail.com>",
   "engines": {
-    "node":"12.14.x"
+    "node": "12.14.x"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
@@ -24,7 +24,8 @@
     "react": "^16.12.0",
     "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-mailchimp-subscribe": "^2.1.0"
   },
   "devDependencies": {
     "prettier": "^1.19.1"
