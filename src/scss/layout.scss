@@ -8,6 +8,10 @@
     margin: 5% 0;
     max-width: 1040px;
   }
+  &__landing {
+    margin: 5% 0;
+    max-width: 800px;
+  }
   &__section {
     padding-top: 100px;
   }
@@ -37,4 +41,7 @@
     margin: 2%;
     border-radius: 15px;
   }
+}
+.test {
+  margin: 0 10px;
 }
