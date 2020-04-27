@@ -1,38 +1,13 @@
 import React from "react"
-import { Container, Row, Col, Button, Form } from "react-bootstrap"
+import { Container, Row, Col, Button } from "react-bootstrap"
 import FNV_EXP from "../images/fnv_exp"
 import MailchimpSubscribe from "react-mailchimp-subscribe"
 
 const url =
   "https://cpustejovsky.us18.list-manage.com/subscribe/post?u=5255bcd054238b51c87af4a7b&amp;id=aaa9023f7d"
 
-const submitData = event => {
-  alert(event.target.value)
-  event.preventDefault()
-}
-const SimpleForm = () => <MailchimpSubscribe url={url} />
-
-// const CustomForm = () => (
-//   <MailchimpSubscribe
-//     url={url}
-//     render={({ subscribe }) => (
-//       <div>
-//         <h4>Subscribe for Updates on Estuary</h4>
-//         <Form onSubmitted={e => submitData(e)}>
-//           <Form.Group controlId="formBasicEmail">
-//             <Form.Control type="email" placeholder="Enter email" />
-//           </Form.Group>
-//           <Button variant="primary" type="submit">
-//             Submit
-//           </Button>
-//         </Form>
-//       </div>
-//     )}
-//   />
-// )
-
 const CustomForm = ({ status, message, onValidated }) => {
-  let email, name
+  let email
   const submit = () =>
     email &&
     email.value.indexOf("@") > -1 &&
