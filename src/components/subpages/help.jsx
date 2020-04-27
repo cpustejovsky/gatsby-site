@@ -1,5 +1,5 @@
 import React from "react"
-import { Button } from "react-bootstrap"
+import { Container,Button } from "react-bootstrap"
 import FNV_EXP from "../images/fnv_exp"
 import MailchimpSubscribe from "react-mailchimp-subscribe"
 
@@ -50,7 +50,7 @@ const CustomForm = ({ status, message, onValidated }) => {
 }
 
 const HelpWanted = () => (
-  <>
+  <Container>
     <h2>Help Me Level Up!</h2>
     <FNV_EXP />
     <br></br>
@@ -85,22 +85,29 @@ const HelpWanted = () => (
       up to follow Estuary's progress.
     </p>
     <p>
-      If you have developer experience, you can check out{" "}
-      <a
-        href="https://github.com/cpustejovsky/estuary"
-        target="_blank"
-        rel="noreferrer noopener"
-      >
-        source code
-      </a>{" "}
-      and offer recommendations.
+      If you have developer experience, you can critique my code and offer
+      recommendations.
     </p>
     <p>
       If you have experience with design, you can take a tour of my app and see
       what could make for better UX.
     </p>
+    <a
+      href="https://cpustejovsky-estuary.herokuapp.com/"
+      target="_blank"
+      rel="noreferrer noopener"
+    >
+      <Button variant="success" style={{marginRight: "10px"}}>Estuary</Button>
+    </a>
+    <a
+      href="https://github.com/cpustejovsky/estuary"
+      target="_blank"
+      rel="noreferrer noopener"
+    >
+      <Button variant="outline-success">Source Code</Button>
+    </a>
     <hr />
-    <h3>Sign up to Receive Updates on Estuary</h3>
+    <h3>Sign up to receive updates on Estuary</h3>
     <MailchimpSubscribe
       url={url}
       render={({ subscribe, status, message }) => (
@@ -111,7 +118,7 @@ const HelpWanted = () => (
         />
       )}
     />
-  </>
+  </Container>
 )
 
 export default HelpWanted
