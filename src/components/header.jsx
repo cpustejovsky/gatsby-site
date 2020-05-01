@@ -39,7 +39,7 @@ const Header = () => (
           <Nav.Link href="https://www.linkedin.com/in/cpustejovsky/">
             <i class="fab fa-linkedin"></i>
           </Nav.Link>
-          <Nav.Link href="mailto:charles.pustejovsky@gmail.com">
+          <Nav.Link href="mailto:charles@cpustejovsky.com">
             <i class="far fa-envelope"></i>
           </Nav.Link>
         </Nav>
