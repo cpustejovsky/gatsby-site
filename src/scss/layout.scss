@@ -19,6 +19,9 @@
     padding-top: 10vh;
     align-self: flex-start;
   }
+  &__404 {
+    width: 100vw;
+  }
 }
 .introduction {
   align-items: center;
@@ -44,4 +47,8 @@
 }
 .test {
   margin: 0 10px;
+}
+.fallout {
+  font-family: Overseer;
+  font-size: 5em
 }
