@@ -8,14 +8,17 @@ const RightHeader = () => (
     <Nav.Link href="https://github.com/cpustejovsky">
       <i className="fab fa-github"></i>
     </Nav.Link>
-    <Nav.Link href="https://dev.to/cpustejovsky">
-      <i className="fab fa-dev"></i>
+    <Nav.Link href="https://www.linkedin.com/in/cpustejovsky/">
+      <i className="fab fa-linkedin"></i>
     </Nav.Link>
     <Nav.Link href="https://twitter.com/CCPustejovsky">
       <i className="fab fa-twitter-square"></i>
     </Nav.Link>
-    <Nav.Link href="https://www.linkedin.com/in/cpustejovsky/">
-      <i className="fab fa-linkedin"></i>
+    <Nav.Link href="https://dev.to/cpustejovsky">
+      <i className="fab fa-dev"></i>
+    </Nav.Link>
+    <Nav.Link href="https://www.freecodecamp.org/cpustejovsky">
+      <i className="fab fa-free-code-camp"></i>
     </Nav.Link>
     <Nav.Link href="mailto:charles@cpustejovsky.com">
       <i className="far fa-envelope"></i>
