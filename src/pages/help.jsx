@@ -1,5 +1,5 @@
 import React from "react"
-import LPHeader from "../components/lp-header.jsx"
+import Header from "../components/header.jsx"
 import SEO from "../components/seo"
 import Help from "../components/subpages/help"
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -8,7 +8,7 @@ import "../scss/custom-bootstrap.scss"
 const IndexPage = () => (
   <>
     <SEO title="Charles Pustejovsky | Full-Stack Developer" />
-    <LPHeader />
+    <Header />
     <div className="site">
       <main className="site__landing">
         <Help />
