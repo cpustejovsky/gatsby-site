@@ -7,7 +7,7 @@ import BlogHeadlessCMS from "../images/blog_headless_cms"
 const Projects = () => {
   const [estuary, openEstuary] = useState(false)
   const [bearsAndBearMarkets, openBearsAndBearMarkets] = useState(false)
-  const [twitterBot, openTwitterBot] = useState(false)
+  const [dynoWaker, openDynoWaker] = useState(false)
   const [gdpr, openGdpr] = useState(false)
   const [signingApp, openSigningApp] = useState(false)
   const [blog, openBlog] = useState(false)
@@ -70,7 +70,7 @@ const Projects = () => {
             <li>
               <a
                 rel="noreferrer noopener"
-                href="https://cpustejovsky-estuary.herokuapp.com/"
+                href="https://www.estuaryapp.com/"
               >
                 Estuary
               </a>
@@ -228,29 +228,26 @@ const Projects = () => {
         </div>
       </Collapse>
       <div
-        onClick={() => openTwitterBot(!twitterBot)}
-        aria-controls="twitter-bot"
-        aria-expanded={twitterBot}
+        onClick={() => openDynoWaker(!dynoWaker)}
+        aria-controls="dyno-waker"
+        aria-expanded={dynoWaker}
         className="projects__collapse-header"
       >
-        <h4>Twitter Bot</h4>
+        <h4>Dyno Waker</h4>
         <p>(NodeJS)</p>
       </div>
-      <Collapse in={twitterBot}>
-        <div id="twitter-bot">
+      <Collapse in={dynoWaker}>
+        <div id="dyno-waker">
           <p>
-            I spend too much time on Twitter so to minimize that time while
-            keeping up with the people and organizations I want to, I started
-            work on a twitter bot. I've published it as an NPM module which is
-            running on this site and sends me an email at 6:00 AM EST everyday
-            with the tweets I want, having already liked them and providing me
-            the option to retweet and reply via a link.
+            I created this to keep two of my Heroku dynos active from 6am to 9pm EST. I
+            realized it might be useful for others who have a paid dyno and some
+            free dynos, so I published it as a NPM module.
           </p>
           <ul>
             <li>
               <a
                 rel="noreferrer noopener"
-                href="https://www.npmjs.com/package/cpustejovsky-twitter-bot"
+                href="https://www.npmjs.com/package/cpustejovsky-dyno-waker"
               >
                 NPM link
               </a>
