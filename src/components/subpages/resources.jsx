@@ -4,14 +4,10 @@ import ARCHIVIST from "../images/archivist"
 import axios from "axios"
 import parse from "html-react-parser"
 const Resources = () => {
-  const [apiData, setApiData] = useState(
-    `<p>Page not working. Resource page can be found <a rel="noreferrer noopener" target="_blank" href="https:dev.to/cpustejovsky/resources-2igo">here</a></p>`
-  )
-  const fetchApiData = async() => {
-    console.log("hit function")
+  const [apiData, setApiData] = useState(false)
+  const fetchApiData = async () => {
     let res = await axios.get("https://dev.to/api/articles/281175")
-    console.log(`response! \n${res.data.body_html}`)
-    setApiData(res.data.body_html)
+    setApiData(parse(res.data.body_html))
   }
 
   useEffect(() => {
@@ -23,10 +19,20 @@ const Resources = () => {
       <h1>Resources</h1>
       <ARCHIVIST />
       <br></br>
-      {/* <strong>Test:</strong> {starsCount ? "Passing" : "Failing"} */}
-      <Button onClick={()=>fetchApiData()}>Refetch API Data</Button>
-      <Button onClick={()=>console.log("test")}>Logs "Test"</Button>
-      {parse(apiData)}
+      {apiData ? (
+        apiData
+      ) : (
+        <p>
+          Page not working. Resource page can be found{" "}
+          <a
+            rel="noreferrer noopener"
+            target="_blank"
+            href="https:dev.to/cpustejovsky/resources-2igo"
+          >
+            here
+          </a>
+        </p>
+      )}
       <hr />
       <p>
         Resources are hosted on{" "}
