@@ -14,9 +14,8 @@ const Resources = () => {
   useEffect(async () => {
     let post = await axios.get(`https://dev.to/api/articles/281175`)
     let data = post.data.body_html
-    setData(data)
+    setData(parse(data))
   }, [])
-
   return (
     <>
       <SEO title="Resources | Cpustejovsky" />
@@ -27,7 +26,19 @@ const Resources = () => {
             <h1>Resources</h1>
             <ARCHIVIST />
             <br></br>
-            {parse(data)}
+            {data}
+            <hr/>
+            <p>
+              Resources are hosted on{" "}
+              <a rel="noreferrer noopener" target="_blank" href="https://dev.to/">
+                DEV.to
+              </a>{" "}
+              and fetched using the{" "}
+              <a rel="noreferrer noopener" target="_blank" href="https://docs.dev.to/api/">
+                DEV Community API
+              </a>
+              .
+            </p>
           </Container>
           <footer className="site__footer">
             Cpustejovsky <i className="far fa-thumbs-up"></i>,{" "}
