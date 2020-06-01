@@ -9,13 +9,21 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "../scss/layout.scss"
 import "../scss/custom-bootstrap.scss"
 const Resources = () => {
-  const [data, setData] = useState("")
-
-  useEffect(async () => {
+  const [apiData, setApiData] = useState("")
+  const fetchApiData = async () => {
     let post = await axios.get(`https://dev.to/api/articles/281175`)
-    let data = post.data.body_html
-    setData(parse(data))
+    setApiData(parse(post.data.body_html))
+  }
+  useEffect(() => {
+    fetchApiData()
   }, [])
+  const renderData = data => {
+    if (data) {
+      return data
+    } else {
+      return "Loading..."
+    }
+  }
   return (
     <>
       <SEO title="Resources | Cpustejovsky" />
@@ -26,15 +34,23 @@ const Resources = () => {
             <h1>Resources</h1>
             <ARCHIVIST />
             <br></br>
-            {data}
-            <hr/>
+            {renderData(apiData)}
+            <hr />
             <p>
               Resources are hosted on{" "}
-              <a rel="noreferrer noopener" target="_blank" href="https://dev.to/">
+              <a
+                rel="noreferrer noopener"
+                target="_blank"
+                href="https://dev.to/"
+              >
                 DEV.to
               </a>{" "}
               and fetched using the{" "}
-              <a rel="noreferrer noopener" target="_blank" href="https://docs.dev.to/api/">
+              <a
+                rel="noreferrer noopener"
+                target="_blank"
+                href="https://docs.dev.to/api/"
+              >
                 DEV Community API
               </a>
               .
