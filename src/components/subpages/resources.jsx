@@ -18,17 +18,6 @@ const Resources = () => {
     fetchApiData()
   }, [])
 
-  // const [starsCount, setStarsCount] = useState(0)
-  // useEffect(() => {
-  //   // get data from GitHub api
-  //   fetch(`https://api.github.com/repos/gatsbyjs/gatsby`)
-  //     .then(response => response.json()) // parse JSON from request
-  //     .then(resultData => {
-  //       setStarsCount(resultData.stargazers_count)
-  //     }) // set data for the number of stars
-  // }, [])
-
-
   return (
     <Container>
       <h1>Resources</h1>
@@ -36,6 +25,7 @@ const Resources = () => {
       <br></br>
       {/* <strong>Test:</strong> {starsCount ? "Passing" : "Failing"} */}
       <Button onClick={()=>fetchApiData()}>Refetch API Data</Button>
+      <Button onClick={()=>console.log("test")}>Logs "Test"</Button>
       {parse(apiData)}
       <hr />
       <p>
