@@ -10,22 +10,13 @@ import "../scss/layout.scss"
 import "../scss/custom-bootstrap.scss"
 const Resources = () => {
   const [apiData, setApiData] = useState("")
-  const fetchApiData = async () => {
-    let post = await axios.get(`https://dev.to/api/articles/281175`)
-    setApiData(parse(post.data.body_html))
-  }
-  const getDataLength = data => data.length
-  console.log(apiData.length)
   useEffect(() => {
-    fetchApiData()
-  }, [getDataLength(apiData)])
-  const renderData = data => {
-    if (data) {
-      return data
-    } else {
-      return "Loading..."
+    const fetchData = async () => {
+      let post = await axios.get(`https://dev.to/api/articles/281175`)
+      setApiData(post.data.body_html)
     }
-  }
+    fetchData()
+  }, [])
   return (
     <>
       <SEO title="Resources | Cpustejovsky" />
@@ -36,7 +27,7 @@ const Resources = () => {
             <h1>Resources</h1>
             <ARCHIVIST />
             <br></br>
-            {renderData(apiData)}
+            {parse(apiData)}
             <hr />
             <p>
               Resources are hosted on{" "}
