@@ -5,9 +5,9 @@ import Help from "../components/subpages/help"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../scss/layout.scss"
 import "../scss/custom-bootstrap.scss"
-const IndexPage = () => (
+const HelpLandingPage = () => (
   <>
-    <SEO title="Charles Pustejovsky | Full-Stack Developer" />
+    <SEO title="Help Me Level Up! | cpustejovsky" />
     <Header />
     <div className="site">
       <main className="site__landing">
@@ -21,4 +21,4 @@ const IndexPage = () => (
   </>
 )
 
-export default IndexPage
+export default HelpLandingPage
