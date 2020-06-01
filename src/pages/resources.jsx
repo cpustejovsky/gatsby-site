@@ -15,11 +15,26 @@ export default class Resources extends Component {
   }
 
   async componentDidMount() {
-    let post = await axios.get(`https://dev.to/api/articles/281175`)
+    let post = await axios.get(`https://dev.to/apii/articles/281175`)
     let data = post.data.body_html
-    this.setState({ data: data })
+    this.setState({ data: parse(data) })
   }
-
+  renderData(data) {
+    return data ? (
+      data
+    ) : (
+      <p>
+        Page not working. Resource page can be found{" "}
+        <a
+          rel="noreferrer noopener"
+          target="_blank"
+          href="https://dev.to/cpustejovsky/resources-2igo"
+        >
+          here
+        </a>
+      </p>
+    )
+  }
   render() {
     return (
       <>
@@ -31,7 +46,7 @@ export default class Resources extends Component {
               <h1>Resources</h1>
               <ARCHIVIST />
               <br></br>
-              {parse(this.state.data)}
+              {this.renderData(this.state.data)}
               <hr />
               <p>
                 Resources are hosted on{" "}
