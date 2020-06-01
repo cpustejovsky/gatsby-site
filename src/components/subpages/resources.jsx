@@ -30,7 +30,7 @@ const Resources = () => {
       <h1>Resources</h1>
       <ARCHIVIST />
       <br></br>
-      Fetch test: {starsCount}
+      <strong>Test:</strong> {starsCount ? "Passing" : "Failing"}
       {parse(apiData)}
       <hr />
       <p>
