@@ -5,8 +5,7 @@ import Resources from "../components/subpages/resources"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../scss/layout.scss"
 import "../scss/custom-bootstrap.scss"
-export default class ResourcePage extends Component {
-  render() {
+const ResourcesPage = () => {
     return (
       <>
         <SEO title="Resources | cpustejovsky" />
@@ -22,5 +21,6 @@ export default class ResourcePage extends Component {
         </div>
       </>
     )
-  }
+  
 }
+export default ResourcesPage
