@@ -8,7 +8,9 @@ const Resources = () => {
     `<p>Page not working. Resource page can be found <a rel="noreferrer noopener" target="_blank" href="https:dev.to/cpustejovsky/resources-2igo">here</a></p>`
   )
   const fetchApiData = async() => {
+    console.log("hit function")
     let res = await axios.get("https://dev.to/api/articles/281175")
+    console.log(`response! \n${res.data.body_html}`)
     setApiData(res.data.body_html)
   }
 
