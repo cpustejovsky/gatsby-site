@@ -11,11 +11,11 @@ import "../scss/custom-bootstrap.scss"
 const Resources = () => {
   const [apiData, setApiData] = useState("")
   useEffect(() => {
-    const fetchData = async () => {
-      let post = await axios.get(`https://dev.to/api/articles/281175`)
-      setApiData(post.data.body_html)
-    }
-    fetchData()
+    fetch(`https://dev.to/api/articles/281175`)
+      .then(res => res.json())
+      .then(data => {
+        setApiData(data.body_html)
+      })
   }, [])
   return (
     <>
