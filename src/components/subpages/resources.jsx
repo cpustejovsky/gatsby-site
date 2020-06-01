@@ -14,20 +14,27 @@ export default class Resources extends Component {
     let data = post.data.body_html
     this.setState({ data: parse(data) })
   }
+  async fetchApiResources(){
+    let post = await axios.get(`https://dev.to/api/articles/281175`)
+    let data = post.data.body_html
+    this.setState({ data: parse(data) })
+  }
+
   renderData(data) {
     return data ? (
       data
     ) : (
-      <p>
-        Page not working. Resource page can be found{" "}
-        <a
-          rel="noreferrer noopener"
-          target="_blank"
-          href="https://dev.to/cpustejovsky/resources-2igo"
-        >
-          here
-        </a>
-      </p>
+      <button onClick={()=>this.fetchApiResources()}>Load Data</button>
+      // <p>
+      //   Page not working. Resource page can be found{" "}
+      //   <a
+      //     rel="noreferrer noopener"
+      //     target="_blank"
+      //     href="https://dev.to/cpustejovsky/resources-2igo"
+      //   >
+      //     here
+      //   </a>
+      // </p>
     )
   }
   render() {
