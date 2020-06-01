@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { Container, Button } from "react-bootstrap"
+import { Container, Spinner } from "react-bootstrap"
 import ARCHIVIST from "../images/archivist"
 import axios from "axios"
 import parse from "html-react-parser"
@@ -13,26 +13,25 @@ const Resources = () => {
   useEffect(() => {
     fetchApiData()
   }, [])
-
+  const loadSpinner = () => {
+    return (
+      <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
+        <Spinner
+          animation="border"
+          role="status"
+          style={{ width: "5rem", height: "5rem" }}
+        >
+          <span className="sr-only">Loading...</span>
+        </Spinner>
+      </div>
+    )
+  }
   return (
     <Container>
       <h1>Resources</h1>
       <ARCHIVIST />
       <br></br>
-      {apiData ? (
-        apiData
-      ) : (
-        <p>
-          Page not working. Resource page can be found{" "}
-          <a
-            rel="noreferrer noopener"
-            target="_blank"
-            href="https:dev.to/cpustejovsky/resources-2igo"
-          >
-            here
-          </a>
-        </p>
-      )}
+      {apiData ? apiData : loadSpinner()}
       <hr />
       <p>
         Resources are hosted on{" "}
