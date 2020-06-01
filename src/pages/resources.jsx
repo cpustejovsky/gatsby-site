@@ -5,6 +5,9 @@ import SEO from "../components/seo"
 import ARCHIVIST from "../components/images/archivist"
 import axios from "axios"
 import parse from "html-react-parser"
+import "bootstrap/dist/css/bootstrap.min.css"
+import "../scss/layout.scss"
+import "../scss/custom-bootstrap.scss"
 const Resources = () => {
   const [data, setData] = useState("")
 
