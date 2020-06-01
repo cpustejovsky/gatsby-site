@@ -5,26 +5,17 @@ import axios from "axios"
 import parse from "html-react-parser"
 const Resources = () => {
   const [apiData, setApiData] = useState(
-    <p>
-      Page not working. Resource page can be found{" "}
-      <a
-        rel="noreferrer noopener"
-        target="_blank"
-        href="https:dev.to/cpustejovsky/resources-2igo"
-      >
-        here
-      </a>
-    </p>
+    `<p>Page not working. Resource page can be found <a rel="noreferrer noopener" target="_blank" href="https:dev.to/cpustejovsky/resources-2igo">here</a></p>`
   )
   const fetchApiResources = async () => {
     let post = await axios.get(`https://dev.to/api/articles/281175`)
     setApiData(parse(post.data.body_html))
   }
   useEffect(() => {
-    fetch("https://dev.to/api/articles/281175")
+    fetch("https://deav.to/api/articles/281175")
       .then(res => res.json())
       .then(data => {
-        setApiData(parse(data.body_html))
+        setApiData(data.body_html)
       })
   }, [])
   return (
@@ -32,7 +23,7 @@ const Resources = () => {
       <h1>Resources</h1>
       <ARCHIVIST />
       <br></br>
-      {apiData}
+      {parse(apiData)}
       <hr />
       <p>
         Resources are hosted on{" "}
