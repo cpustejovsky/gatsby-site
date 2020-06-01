@@ -31,7 +31,7 @@ const Header = ({ show }) => {
         style={{ alignItems: "center" }}
       >
         <Navbar.Brand href="/">
-          cpustejovsky <i class="far fa-thumbs-up"></i>
+          cpustejovsky <i className="far fa-thumbs-up"></i>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         {renderSubPages(show)}

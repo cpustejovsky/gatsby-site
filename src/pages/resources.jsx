@@ -14,9 +14,11 @@ const Resources = () => {
     let post = await axios.get(`https://dev.to/api/articles/281175`)
     setApiData(parse(post.data.body_html))
   }
+  const getDataLength = data => data.length
+  console.log(apiData.length)
   useEffect(() => {
     fetchApiData()
-  }, [])
+  }, [getDataLength(apiData)])
   const renderData = data => {
     if (data) {
       return data
