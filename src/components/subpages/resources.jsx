@@ -6,8 +6,8 @@ import parse from "html-react-parser"
 const Resources = () => {
   const [apiData, setApiData] = useState(false)
   const fetchApiData = async () => {
-    // let res = await axios.get("https://dev.to/api/articles/281175")
-    // setApiData(parse(res.data.body_html))
+    let res = await axios.get("https://dev.to/api/articles/281175")
+    setApiData(parse(res.data.body_html))
   }
 
   useEffect(() => {
