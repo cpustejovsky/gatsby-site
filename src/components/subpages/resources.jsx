@@ -6,8 +6,8 @@ import parse from "html-react-parser"
 const Resources = () => {
   const [apiData, setApiData] = useState(false)
   const fetchApiData = async () => {
-    let res = await axios.get("https://dev.to/api/articles/281175")
-    setApiData(parse(res.data.body_html))
+    // let res = await axios.get("https://dev.to/api/articles/281175")
+    // setApiData(parse(res.data.body_html))
   }
 
   useEffect(() => {
@@ -15,15 +15,36 @@ const Resources = () => {
   }, [])
   const loadSpinner = () => {
     return (
-      <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
-        <Spinner
-          animation="border"
-          role="status"
-          style={{ width: "5rem", height: "5rem" }}
+      <>
+        <div
+          style={{
+            width: "100%",
+            display: "flex",
+            flexFlow: "column nowrap",
+            alignItems: "center",
+          }}
         >
-          <span className="sr-only">Loading...</span>
-        </Spinner>
-      </div>
+          <Spinner
+            animation="border"
+            role="status"
+            style={{ width: "5rem", height: "5rem" }}
+          >
+            <span className="sr-only">Loading...</span>
+          </Spinner>
+          <br/>
+          <p>
+            Resources not loading. Enable JavaScript to fix or visit the
+            resource page can be found{" "}
+            <a
+              rel="noreferrer noopener"
+              target="_blank"
+              href="https:dev.to/cpustejovsky/resources-2igo"
+            >
+              here
+            </a>
+          </p>
+        </div>
+      </>
     )
   }
   return (
