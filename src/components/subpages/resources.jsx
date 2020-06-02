@@ -38,7 +38,7 @@ const Resources = () => {
             <a
               rel="noreferrer noopener"
               target="_blank"
-              href="https:dev.to/cpustejovsky/resources-2igo"
+              href="https://dev.to/cpustejovsky/resources-2igo"
             >
               here
             </a>
