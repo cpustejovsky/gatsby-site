@@ -31,7 +31,7 @@ const Resources = () => {
           >
             <span className="sr-only">Loading...</span>
           </Spinner>
-          <br/>
+          <br />
           <p>
             Resources not loading. Enable JavaScript to fix or visit the
             resource page can be found{" "}
@@ -52,7 +52,7 @@ const Resources = () => {
       <h1>Resources</h1>
       <ARCHIVIST />
       <br></br>
-      {apiData ? apiData : loadSpinner()}
+      <div className="devto">{apiData ? apiData : loadSpinner()}</div>
       <hr />
       <p>
         Resources are hosted on{" "}
