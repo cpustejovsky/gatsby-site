@@ -21,8 +21,8 @@ const Introduction = () => (
               ikigai
             </a>{" "}
           </strong>
-          which is something you're passionate about, talented at, can have a
-          career in, and can help the world with.
+          is something you're passionate about, talented at, can have a career
+          in, and can help the world with.
         </p>
         <p>
           After years of searching,{" "}
@@ -35,13 +35,8 @@ const Introduction = () => (
               I realized that programming is my ikigai.
             </a>{" "}
           </strong>
-          Since then I've learned as much as I can about computer science,
-          JavaScript, and how to use code to create things that help others
-          while building{" "}
-          <strong>
-            <a href="#projects">projects</a>
-          </strong>{" "}
-          along the way.
+          Since then I've learned as much as I can about how to use computer
+          science and code to build things that provide value.
         </p>
         <hr />
         <div>
