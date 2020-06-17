@@ -11,16 +11,15 @@ const Introduction = () => (
       <Col lg={6}>
         <h3>Howdy!</h3>
         <p>
-          I'm looking for a front-end or full-stack developer role to align my
-          career path with my{" "}
+          An{" "}
           <strong>
-          <a
-            rel="noreferrer noopener"
-            target="_blank"
-            href="https://www.forbes.com/sites/chrismyers/2018/02/23/how-to-find-your-ikigai-and-transform-your-outlook-on-life-and-business/#4bb1f0872ed4"
-          >
-            ikigai
-          </a>{" "}
+            <a
+              rel="noreferrer noopener"
+              target="_blank"
+              href="https://www.forbes.com/sites/chrismyers/2018/02/23/how-to-find-your-ikigai-and-transform-your-outlook-on-life-and-business/#4bb1f0872ed4"
+            >
+              ikigai
+            </a>{" "}
           </strong>
           which is something you're passionate about, talented at, can have a
           career in, and can help the world with.
@@ -38,7 +37,11 @@ const Introduction = () => (
           </strong>
           Since then I've learned as much as I can about computer science,
           JavaScript, and how to use code to create things that help others
-          while building <strong><a href="#projects">projects</a></strong> along the way.
+          while building{" "}
+          <strong>
+            <a href="#projects">projects</a>
+          </strong>{" "}
+          along the way.
         </p>
         <hr />
         <div>

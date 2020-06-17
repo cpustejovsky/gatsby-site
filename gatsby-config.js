@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Cpustejovsky`,
-    description: `Programming is my passion and I want to use my passion and skills to provide value for your company as a full-stack JavaScript developer.`,
+    description: `Programming is my passion and I love to use my passion and skills to provide value.`,
     author: `@cpustejovsky`,
   },
   plugins: [

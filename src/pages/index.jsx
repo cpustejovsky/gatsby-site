@@ -7,7 +7,7 @@ import About from "../components/subpages/about"
 import Projects from "../components/subpages/projects"
 const IndexPage = () => (
   <Layout>
-    <SEO title="Charles Pustejovsky | Full-Stack Developer" />
+    <SEO title="Charles Pustejovsky | Developer" />
     <Introduction />
     <About />
     <Projects />
