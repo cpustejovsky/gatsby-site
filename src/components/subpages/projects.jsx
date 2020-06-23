@@ -130,7 +130,7 @@ const Projects = () => {
           </ul>
         </div>
       </Collapse>
-      <div
+      {/* <div
         onClick={() => openBearsAndBearMarkets(!bearsAndBearMarkets)}
         aria-expanded={lifeTogetherCalculator}
         className="projects__collapse-header"
@@ -176,7 +176,7 @@ const Projects = () => {
             </li>
           </ul>
         </div>
-      </Collapse>
+      </Collapse> */}
 
       <div
         onClick={() => openBlog(!blog)}
