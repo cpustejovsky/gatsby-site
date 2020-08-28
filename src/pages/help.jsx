@@ -1,14 +1,13 @@
 import React from "react"
-import Header from "../components/header.jsx"
+import Layout from "../components/layout.jsx"
 import SEO from "../components/seo"
 import Help from "../components/subpages/help"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../scss/layout.scss"
 import "../scss/custom-bootstrap.scss"
 const HelpLandingPage = () => (
-  <>
+  <Layout>
     <SEO title="Help Me Level Up! | cpustejovsky" />
-    <Header />
     <div className="site">
       <main className="site__landing">
         <Help />
@@ -18,7 +17,7 @@ const HelpLandingPage = () => (
         </footer>
       </main>
     </div>
-  </>
+  </Layout>
 )
 
 export default HelpLandingPage

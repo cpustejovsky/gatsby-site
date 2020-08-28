@@ -2,7 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import MenuIcon from "@material-ui/icons/Menu"
 import {
-  Link,
   AppBar,
   Toolbar,
   Typography,
@@ -12,6 +11,7 @@ import {
   Hidden,
 } from "@material-ui/core/"
 import { makeStyles } from "@material-ui/core/styles"
+import { Link } from "gatsby"
 
 const useStyles = makeStyles(theme => ({
   menu: {
@@ -20,9 +20,9 @@ const useStyles = makeStyles(theme => ({
     width: "100%",
     flexFlow: "row nowrap",
     [theme.breakpoints.up("md")]: {
-      color: "white",
+      color: "rgba(0,0,0,.75)",
       "& a": {
-        color: "white",
+        color: "rgba(0,0,0,.75)",
       },
     },
     [theme.breakpoints.down("sm")]: {
@@ -58,16 +58,16 @@ const Header = ({ show }) => {
       return (
         <div className={classes.menu}>
           <div className={classes.menuItems}>
-            <MenuItem component={Link} href="#about" onClick={handleClose}>
+            <MenuItem component={Link} to="#about" onClick={handleClose}>
               About Me
             </MenuItem>
-            <MenuItem component={Link} href="#projects" onClick={handleClose}>
+            <MenuItem component={Link} to="#projects" onClick={handleClose}>
               Projects
             </MenuItem>
-            <MenuItem component={Link} href="#reading" onClick={handleClose}>
+            <MenuItem component={Link} to="#reading" onClick={handleClose}>
               Reading List
             </MenuItem>
-            <MenuItem component={Link} href="/resources" onClick={handleClose}>
+            <MenuItem component={Link} to="resources" onClick={handleClose}>
               Resources
             </MenuItem>
           </div>
@@ -98,14 +98,14 @@ const Header = ({ show }) => {
   }
   return (
     <>
-      <AppBar>
+      <AppBar color="white">
         <Toolbar>
           <Typography
             component={Link}
             href="/"
-            variant="h6"
+            variant="h5"
             style={{
-              color: "white",
+              color: "black",
               textDecoration: "none",
               paddingRight: "20px",
               justifySelf: "center",

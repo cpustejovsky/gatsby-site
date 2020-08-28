@@ -1,15 +1,11 @@
-import React, { Component } from "react"
-import Header from "../components/header.jsx"
+import React from "react"
+import Layout from "../components/layout.jsx"
 import SEO from "../components/seo"
 import Resources from "../components/subpages/resources"
-import "bootstrap/dist/css/bootstrap.min.css"
-import "../scss/layout.scss"
-import "../scss/custom-bootstrap.scss"
 const ResourcesPage = () => {
     return (
-      <>
+      <Layout>
         <SEO title="Resources | cpustejovsky" />
-        <Header />
         <div className="site">
           <main className="site__landing">
             <Resources />
@@ -19,7 +15,7 @@ const ResourcesPage = () => {
             </footer>
           </main>
         </div>
-      </>
+      </Layout>
     )
   
 }
