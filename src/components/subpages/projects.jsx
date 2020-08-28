@@ -6,7 +6,6 @@ import BlogHeadlessCMS from "../images/blog_headless_cms"
 
 const Projects = () => {
   const [estuary, openEstuary] = useState(false)
-  const [bearsAndBearMarkets, openBearsAndBearMarkets] = useState(false)
   const [dynoWaker, openDynoWaker] = useState(false)
   const [gdpr, openGdpr] = useState(false)
   const [signingApp, openSigningApp] = useState(false)
@@ -17,16 +16,8 @@ const Projects = () => {
     <Container id="projects" className="site__section">
       <h1>Projects</h1>
       <p>
-        The best way to learn is by doing and that means building things. One of
-        my weaknesses is that I try to be a perfectionist and procrastinate.
-        Thankfully, programming doesn't allow for that. I can't just read about
-        JavaScript, React, or NodeJS, I have to build something to really learn
-        it.
+        Here is a growing list of projects I am working on <strong>(click for details)</strong>
       </p>
-      <strong>
-        So here is a growing list of probjects I am working on (click for
-        details)
-      </strong>
       <hr />
       <div
         onClick={() => openEstuary(!estuary)}
@@ -68,10 +59,7 @@ const Projects = () => {
           </p>
           <ul>
             <li>
-              <a
-                rel="noreferrer noopener"
-                href="https://www.estuaryapp.com/"
-              >
+              <a rel="noreferrer noopener" href="https://www.estuaryapp.com/">
                 Estuary
               </a>
             </li>
@@ -239,9 +227,9 @@ const Projects = () => {
       <Collapse in={dynoWaker}>
         <div id="dyno-waker">
           <p>
-            I created this to keep two of my Heroku dynos active from 6am to 9pm EST. I
-            realized it might be useful for others who have a paid dyno and some
-            free dynos, so I published it as a NPM module.
+            I created this to keep two of my Heroku dynos active from 6am to 9pm
+            EST. I realized it might be useful for others who have a paid dyno
+            and some free dynos, so I published it as a NPM module.
           </p>
           <ul>
             <li>

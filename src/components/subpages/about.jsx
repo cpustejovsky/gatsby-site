@@ -15,25 +15,22 @@ const About = () => {
             </Col>
           </Row>
           <br />
-          <p>My name is Charles Pustejovsky.</p>
+          <p>I'm Charles Pustejovsky.</p>
           <p>
-            I'm a perpetual learner. I never get bored even when reading a SCOTUS statement or
-            an academic essay on grain shipments or the most dry technical
-            documentation.
+            I love learning and never get bored whether I'm reading a SCOTUS
+            statement or an essay on grain shipments or the most dry technical
+            documentation. Of course, I can't learn programming just by reading
+            about it (<strong>I tried!</strong>).
           </p>
           <p>
-            One of the things I love most about programming is that it forces me
-            to
-            <strong> learn by doing</strong>. I can't just read about
-            programming, I have to program. It takes me out of my comfort zone
-            in the most delightful way. Programming helps me fail fast and learn
-            and grow from those mistakes.
+            Instead, I needed to
+            <strong> learn by doing</strong> which took me out of my comfort
+            zone, helped me stop procrastinating, and learn to fail fast and use
+            those failures to grow.
           </p>
           <p>
             <strong>
-              I'm no longer scared of asking stupid questions and showing that I
-              don't know it all because that's the only way I'll grow, both as a
-              person and as a developer.
+              This helped me ask more question evan at the risk of "looking stupid" because that's the only way I'll grow.
             </strong>
           </p>
         </Col>
@@ -49,17 +46,19 @@ const About = () => {
           </div>
           <Collapse in={skills}>
             <ul>
+              <li>Golang</li>
               <li>JavaScript</li>
+              <li>NodeJS</li>
+              <li>MongoDB</li>
               <li>React/Redux</li>
               <li>GatsbyJS</li>
               <li>VueJS</li>
               <li>Nuxt.js</li>
-              <li>NodeJS</li>
-              <li>MongoDB</li>
               <li>CSS</li>
               <li>Git</li>
-              <li>Golang (Beginner)</li>
               <li>Python (Beginner)</li>
+              <li>Django (Beginner)</li>
+              <li>PostgreSQL (Beginner)</li>
             </ul>
           </Collapse>
         </Col>

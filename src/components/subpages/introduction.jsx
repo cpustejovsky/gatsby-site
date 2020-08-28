@@ -21,22 +21,11 @@ const Introduction = () => (
               ikigai
             </a>{" "}
           </strong>
-          is something you're passionate about, talented at, can have a career
-          in, and can help the world with.
+          is where your passion, career path, talents, and ability to provide value meet.
         </p>
+        {/* TODO: add blog post story */}
         <p>
-          After years of searching,{" "}
-          <strong>
-            <a
-              rel="noreferrer noopener"
-              target="_blank"
-              href="https://dev.to/cpustejovsky/a-month-of-development-work-52gh"
-            >
-              I realized that programming is my ikigai.
-            </a>{" "}
-          </strong>
-          Since then I've learned as much as I can about how to use computer
-          science and code to build things that provide value.
+          Programming is my ikigai which is why I continually learn and grow and work on things that provides value to myself and others.
         </p>
         <hr />
         <div>
