@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { Container, Spinner } from "react-bootstrap"
+import { Container, CircularProgress } from "@material-ui/core"
 import ARCHIVIST from "../images/archivist"
 import axios from "axios"
 import parse from "html-react-parser"
@@ -24,13 +24,7 @@ const Resources = () => {
             alignItems: "center",
           }}
         >
-          <Spinner
-            animation="border"
-            role="status"
-            style={{ width: "5rem", height: "5rem" }}
-          >
-            <span className="sr-only">Loading...</span>
-          </Spinner>
+          <CircularProgress style={{ width: "5rem", height: "5rem" }} />
           <br />
           <p>
             Resources not loading. Enable JavaScript to fix or visit the
