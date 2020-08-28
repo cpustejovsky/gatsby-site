@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Container, Row, Col, Collapse } from "react-bootstrap"
+import { Container, Grid, Collapse } from "@material-ui/core"
 import BlogOriginal from "../images/blog_original"
 import BlogRefresh from "../images/blog_refresh"
 import BlogHeadlessCMS from "../images/blog_headless_cms"
@@ -118,54 +118,6 @@ const Projects = () => {
           </ul>
         </div>
       </Collapse>
-      {/* <div
-        onClick={() => openBearsAndBearMarkets(!bearsAndBearMarkets)}
-        aria-expanded={lifeTogetherCalculator}
-        className="projects__collapse-header"
-      >
-        <h4>Bears and Bear Markets</h4>
-        <p>(ReactJS)</p>
-      </div>
-      <Collapse in={bearsAndBearMarkets}>
-        <div>
-          <p>
-            At my previous company, people often wanted to see the current price
-            of Bitcoin or some kind of financial news. I'd rather have a Panda
-            livestream playing in the breakroom. To balance both these desires
-            out, I thought of thia app which combines both things.
-          </p>
-          <p>
-            This app is making use of{" "}
-            <a
-              href="https://polygon.io/"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              Polygon.io's
-            </a>{" "}
-            API along with Redux.
-          </p>
-          <ul>
-            <li>
-              <a
-                href="https://bears-and-bear-markets.herokuapp.com/"
-                rel="noreferrer noopener"
-              >
-                Bears and Bear Markets
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/cpustejovsky/bears-and-bear-markets"
-                rel="noreferrer noopener"
-              >
-                Code
-              </a>
-            </li>
-          </ul>
-        </div>
-      </Collapse> */}
-
       <div
         onClick={() => openBlog(!blog)}
         className="projects__collapse-header"
@@ -178,16 +130,16 @@ const Projects = () => {
             I forked Ghost's Casper theme and modified it with the help of an
             amazing marketing designer to give it a modern look.
           </p>
-          <Row>
-            <Col md={6} className="projects__section">
+          <Grid container>
+            <Grid item md={6} className="projects__section">
               <h3>Original</h3>
               <BlogOriginal />
-            </Col>
-            <Col md={6} className="projects__section">
+            </Grid>
+            <Grid item md={6} className="projects__section">
               <h3>CSS Redesign</h3>
               <BlogRefresh />
-            </Col>
-          </Row>
+            </Grid>
+          </Grid >
         </div>
       </Collapse>
       <div
@@ -199,7 +151,7 @@ const Projects = () => {
       <Collapse in={headlessCms}>
         <div>
           {" "}
-          <Col md={12}>
+          <Grid item md={12}>
             <p>
               I used Ghost's Content API to turn BitPay's blog into a headless
               CMS and add the blog to BitPay's Nuxt.js site.
@@ -209,10 +161,10 @@ const Projects = () => {
               basic copy edits to BitPay's site without a full development
               process.
             </p>
-          </Col>
-          <Col md={12} className="projects__section">
+          </Grid>
+          <Grid item md={12} className="projects__section">
             <BlogHeadlessCMS />
-          </Col>
+          </Grid>
         </div>
       </Collapse>
       <div
