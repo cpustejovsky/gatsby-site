@@ -1,5 +1,5 @@
 import React from "react"
-import { Container,Button } from "react-bootstrap"
+import { Container, Button } from "@material-ui/core"
 import FNV_EXP from "../images/fnv_exp"
 import MailchimpSubscribe from "react-mailchimp-subscribe"
 
@@ -44,7 +44,7 @@ const CustomForm = ({ status, message, onValidated }) => {
       )}
 
       <br />
-      <Button onClick={submit}>Submit</Button>
+      <Button variant="contained" style={{backgroundColor: "green", color: "white"}} onClick={submit}>Submit</Button>
     </div>
   )
 }
@@ -97,14 +97,14 @@ const HelpWanted = () => (
       target="_blank"
       rel="noreferrer noopener"
     >
-      <Button variant="success" style={{marginRight: "10px"}}>Estuary</Button>
+      <Button variant="contained" color="primary" style={{marginRight: "10px"}}>Estuary</Button>
     </a>
     <a
       href="https://github.com/cpustejovsky/estuary"
       target="_blank"
       rel="noreferrer noopener"
     >
-      <Button variant="outline-success">Source Code</Button>
+      <Button variant="outlined" color="secondary">Source Code</Button>
     </a>
     <hr />
     <h3>Sign up to receive updates on Estuary</h3>

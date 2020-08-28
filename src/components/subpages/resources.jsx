@@ -28,7 +28,7 @@ const Resources = () => {
           <br />
           <p>
             Resources not loading. Enable JavaScript to fix or visit the
-            resource page can be found{" "}
+            resource page which can be found{" "}
             <a
               rel="noreferrer noopener"
               target="_blank"

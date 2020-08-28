@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Container } from "react-bootstrap"
+import { Container } from "@material-ui/core"
 import Fallout404 from "../components/images/fallout404"
 const NotFoundPage = () => (
   <Layout>
