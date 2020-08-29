@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Container, Grid, Collapse } from "@material-ui/core"
 import Cpustejovsky from "../images/cpustejovsky"
+import CpustejovskyGopher from "../images/cpustejovskyGopher"
 const About = () => {
   const [skills, openSkills] = useState(false)
   const [interests, openInterests] = useState(false)
@@ -9,9 +10,12 @@ const About = () => {
       <h1>About Me</h1>
       <Grid container>
         <Grid item md={12}>
-          <Grid container>
-            <Grid item md={6} className="mx-auto">
+          <Grid container justify="center" alignItems="flex-end">
+            <Grid item xs={7}>
               <Cpustejovsky />
+            </Grid>
+            <Grid item xs={5}>
+              <CpustejovskyGopher />
             </Grid>
           </Grid>
           <br />
