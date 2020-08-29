@@ -1,14 +1,14 @@
 import React from "react"
-import { Container, Row, Col, Button } from "react-bootstrap"
+import { Container, Grid, Button } from "@material-ui/core"
 import Ikigai from "../images/ikigai"
 import Resume from "../docs/Cpustejovsky_Resume.pdf"
 const Introduction = () => (
   <Container>
-    <Row className="introduction">
-      <Col lg={6}>
+    <Grid container className="introduction">
+      <Grid item xs={12} sm={6}>
         <Ikigai />
-      </Col>
-      <Col lg={6}>
+      </Grid>
+      <Grid item xs={12} sm={6}>
         <h3>Howdy!</h3>
         <p>
           An{" "}
@@ -21,20 +21,24 @@ const Introduction = () => (
               ikigai
             </a>{" "}
           </strong>
-          is where your passion, career path, talents, and ability to provide value meet.
+          is where your passion, career path, talents, and ability to provide
+          value meet.
         </p>
         {/* TODO: add blog post story */}
         <p>
-          Programming is my ikigai which is why I continually learn and grow and work on things that provides value to myself and others.
+          Programming is my ikigai which is why I continually learn and grow and
+          work on things that provides value to myself and others.
         </p>
         <hr />
         <div>
           <a href={Resume}>
-            <Button variant="primary">Resume</Button>
+            <Button variant="contained" color="primary">
+              Resume
+            </Button>
           </a>
         </div>
-      </Col>
-    </Row>
+      </Grid>
+    </Grid>
   </Container>
 )
 
