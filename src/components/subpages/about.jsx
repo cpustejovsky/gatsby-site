@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Container, Row, Col, Collapse } from "react-bootstrap"
+import { Container, Grid, Collapse } from "@material-ui/core"
 import Cpustejovsky from "../images/cpustejovsky"
 const About = () => {
   const [skills, openSkills] = useState(false)
@@ -7,13 +7,13 @@ const About = () => {
   return (
     <Container id="about" className="site__section">
       <h1>About Me</h1>
-      <Row>
-        <Col md={12}>
-          <Row>
-            <Col md={6} className="mx-auto">
+      <Grid container>
+        <Grid item md={12}>
+          <Grid container>
+            <Grid item md={6} className="mx-auto">
               <Cpustejovsky />
-            </Col>
-          </Row>
+            </Grid>
+          </Grid>
           <br />
           <p>I'm Charles Pustejovsky.</p>
           <p>
@@ -30,14 +30,15 @@ const About = () => {
           </p>
           <p>
             <strong>
-              This helped me ask more question evan at the risk of "looking stupid" because that's the only way I'll grow.
+              This helped me ask more question evan at the risk of "looking
+              stupid" because that's the only way I'll grow.
             </strong>
           </p>
-        </Col>
-      </Row>
+        </Grid>
+      </Grid>
       <hr />
-      <Row>
-        <Col md={12}>
+      <Grid container>
+        <Grid item xs={12} md={6}>
           <div
             onClick={() => openSkills(!skills)}
             className="projects__collapse-header"
@@ -61,8 +62,8 @@ const About = () => {
               <li>PostgreSQL (Beginner)</li>
             </ul>
           </Collapse>
-        </Col>
-        <Col md={12}>
+        </Grid>
+        <Grid item xs={12} md={6}>
           <div
             onClick={() => openInterests(!interests)}
             className="projects__collapse-header"
@@ -81,8 +82,8 @@ const About = () => {
               <li>Baking</li>
             </ul>
           </Collapse>
-        </Col>
-      </Row>
+        </Grid>
+      </Grid>
     </Container>
   )
 }
