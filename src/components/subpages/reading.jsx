@@ -1,22 +1,38 @@
 import React, { useState } from "react"
-import { Container, Row, Col, Collapse, Button } from "react-bootstrap"
+import {
+  Container,
+  Grid,
+  Collapse,
+  Switch,
+  FormControlLabel,
+  Typography,
+} from "@material-ui/core"
 import GrokkingAlgos from "../images/grokkingalgos"
 import GTD from "../images/gtd"
 import PragProg from "../images/pragprog"
+import { makeStyles } from "@material-ui/core/styles"
 
+const useStyles = makeStyles(theme => ({
+  description: {
+    paddingLeft: "2%",
+  },
+}))
 const ReadingList = () => {
+  const classes = useStyles()
   const [booksRead, toggleBooksRead] = useState(false)
   return (
     <Container id="reading" className="site__section">
       <br />
-      <h1>Reading List</h1>
+      <Typography variant="h4" style={{ marginTop: "5%" }}>
+        Reading List
+      </Typography>{" "}
       <hr style={{ border: "1px solid #bababa" }} />
-      <Row>
-        <Col md={4}>
+      <Grid container>
+        <Grid item md={4}>
           <PragProg />
-        </Col>
-        <Col md={8}>
-          <h4>The Pragmatic Programmer</h4>
+        </Grid>
+        <Grid item md={8} className={classes.description}>
+          <Typography variant="h6">The Pragmatic Programmer </Typography>
           <p>
             It feels providential that I procrastinated on buying this book
             until the 20th anniversary update came out. I'm looking forward to
@@ -31,33 +47,39 @@ const ReadingList = () => {
               The Pragmatic Bookshelf
             </a>
           </p>
-        </Col>
-      </Row>
+        </Grid>
+      </Grid>
       <br />
-      <div
-        onClick={() => toggleBooksRead(!booksRead)}
-        aria-controls="booksRead"
-        aria-expanded={booksRead}
-        style={{
-          display: "flex",
-          flexFlow: "row nowrap",
-          justifyContent: "space-between",
-        }}
-      >
-        <h1>Books I've Read</h1>
-        <Button size="sm" variant={booksRead ? "warning" : "primary"}>
-          {booksRead ? "Collapse" : "Expand"}
-        </Button>
-      </div>
-      <hr style={{ border: "1px solid #bababa" }} />
+      <Grid align="start">
+        <Grid item>
+          <Typography variant="h5" style={{ marginTop: "5%" }}>
+            Books I've Read
+          </Typography>
+        </Grid>
+        <Grid item>
+          <FormControlLabel
+            control={
+              <Switch
+                color="primary"
+                checked={booksRead}
+                onChange={() => {
+                  toggleBooksRead(!booksRead)
+                }}
+              />
+            }
+            label={booksRead ? "Collapse" : "Expand"}
+          />
+        </Grid>
+      </Grid>
       <Collapse in={booksRead}>
+        <hr style={{ border: "1px solid #bababa" }} />
         <div id="booksRead">
-          <Row>
-            <Col md={4}>
+          <Grid container>
+            <Grid item md={4}>
               <GTD />
-            </Col>
-            <Col md={8}>
-              <h4>Getting Things Done</h4>
+            </Grid>
+            <Grid item md={8} className={classes.description}>
+              <Typography variant="h6">Getting Things Done </Typography>
               <p>
                 I really love the system David Allen lays out in Getting Things
                 Done. This system is what I am basing my productivity app{" "}
@@ -78,20 +100,20 @@ const ReadingList = () => {
                   Amazon
                 </a>
               </p>
-            </Col>
-          </Row>
-          {/* <hr style={{ border: "1px solid #bababa" }} /> */}
+            </Grid>
+          </Grid>
           <br />
-          <Row>
-            <Col md={4}>
+          <Grid container>
+            <Grid item md={4}>
               <GrokkingAlgos />
-            </Col>
-            <Col md={8}>
-              <h4>Grokking Algorithms</h4>
+            </Grid>
+            <Grid item md={8} className={classes.description}>
+              <Typography variant="h6">Grokking Algorithms</Typography>
               <p>
                 I love learning about computer science both because it's fun and
-                to fill in the gaps that I likely have from not getting a computer science degree. Grokking Algorithms by Aditya
-                Y. Bhargava was a great place to start that journey.
+                to fill in the gaps that I likely have from not getting a
+                computer science degree. Grokking Algorithms by Aditya Y.
+                Bhargava was a great place to start that journey.
               </p>
               <p>
                 Buy on{" "}
@@ -102,9 +124,9 @@ const ReadingList = () => {
                   Amazon
                 </a>
               </p>
-            </Col>
-          </Row>
-          <br/>
+            </Grid>
+          </Grid>
+          <br />
         </div>
       </Collapse>
     </Container>
