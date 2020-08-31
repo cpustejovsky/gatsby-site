@@ -98,7 +98,7 @@ const Header = ({ show }) => {
   }
   return (
     <>
-      <AppBar color="white">
+      <AppBar color="white" position="static">
         <Toolbar>
           <Typography
             component={Link}
