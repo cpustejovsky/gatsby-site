@@ -6,6 +6,9 @@ body {
   display: flex;
   justify-content: center;
   margin: 0;
+  a {
+    text-decoration: none;
+  }
 }
 
 .site {
