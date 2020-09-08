@@ -42,9 +42,12 @@ const ReadingList = () => {
             this book will be a great help in that endeavour.
           </p>
           <strong>
-            Buy other{" "}
-            <a rel="noreferrer noopener" href="https://www.calhoun.io/">
-              courses and resources by Jon Calhoun
+            Buy on{" "}
+            <a
+              rel="noreferrer noopener"
+              href="https://lets-go.alexedwards.net/"
+            >
+              Alex Edward's Website
             </a>
           </strong>
         </Grid>
@@ -217,13 +220,15 @@ const ReadingList = () => {
                 Bhargava was a great place to start that journey.
               </p>
               <p>
-                Buy on{" "}
-                <a
-                  rel="noreferrer noopener"
-                  href="https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230"
-                >
-                  Amazon
-                </a>
+                <strong>
+                  Buy on{" "}
+                  <a
+                    rel="noreferrer noopener"
+                    href="https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230"
+                  >
+                    Amazon
+                  </a>
+                </strong>
               </p>
             </Grid>
           </Grid>
