@@ -9,14 +9,14 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 export default function Book(props) {
-  const { BookIMG, title, textArr, ctaArr } = props
+  const { Img, title, textArr, ctaArr } = props
   const classes = useStyles()
 
   return (
     <>
       <Grid container>
         <Grid item md={4}>
-          <BookIMG />
+          <Img />
         </Grid>
         <Grid item md={8} className={classes.description}>
           <Typography variant="h6">{title}</Typography>

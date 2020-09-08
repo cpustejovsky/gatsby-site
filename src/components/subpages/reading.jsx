@@ -16,20 +16,13 @@ const ReadingList = () => {
   let currentlyReading = []
 
   books.forEach(book => {
+    const { Img, title, textArr, ctaArr, read } = book
     let bookComp = (
-      <Book
-        BookIMG={book.BookImg}
-        title={book.title}
-        textArr={book.textArr}
-        ctaArr={book.ctaArr}
-      />
+      <Book Img={Img} title={title} textArr={textArr} ctaArr={ctaArr} />
     )
-    if (book.read === true) {
-      alreadyRead = [...alreadyRead, bookComp]
-    }
-    if (book.read === false) {
-      currentlyReading = [...currentlyReading, bookComp]
-    }
+    read
+      ? (alreadyRead = [...alreadyRead, bookComp])
+      : (currentlyReading = [...currentlyReading, bookComp])
   })
   return (
     <Container id="reading" className="site__section">

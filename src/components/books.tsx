@@ -8,7 +8,7 @@ import LetsGo from "./images/lets_go"
 
 type Book = {
   read: boolean,
-  BookImg: ()=>JSX.Element,
+  Img: ()=>JSX.Element,
   title: string,
   textArr: string[] | JSX.Element[],
   ctaArr: object[],
@@ -17,7 +17,7 @@ type Book = {
 const books: Book[] = [
   {
     read: false,
-    BookImg: () => <LetsGo />,
+    Img: () => <LetsGo />,
     title: "Let's Go",
     textArr: [
       <p>
@@ -35,7 +35,7 @@ const books: Book[] = [
   },
   {
     read: false,
-    BookImg: () => <PragProg />,
+    Img: () => <PragProg />,
     title: "The Pragmatic Programmer",
     textArr: [
       <p>
@@ -55,7 +55,7 @@ const books: Book[] = [
   },
   {
     read: true,
-    BookImg: () => <GTD />,
+    Img: () => <GTD />,
     title: "Getting Things Done",
     textArr: [
       <p>
@@ -80,7 +80,7 @@ const books: Book[] = [
   },
   {
     read: true,
-    BookImg: () => <Scrum />,
+    Img: () => <Scrum />,
     title: "Learn Go with tests",
     textArr: [
       "I've never been at company that used Agile/Scrum and, as a result, have been able to see first-hand the issues that can arise from not following a system like this.",
@@ -97,7 +97,7 @@ const books: Book[] = [
   },
   {
     read: true,
-    BookImg: () => <TDDGo />,
+    Img: () => <TDDGo />,
     title: "Learn Go with tests",
     textArr: [
       "I believe both Golang and TDD are excelent tools for writing scalable, maintainable code so it made sense to improve my Golang skills while also getting into the habit of doing test-driven development.",
@@ -115,7 +115,7 @@ const books: Book[] = [
   },
   {
     read: true,
-    BookImg: () => <GrokkingAlgos />,
+    Img: () => <GrokkingAlgos />,
     title: "Grokking Algorithms",
     textArr: [
       "I love learning about computer science both because it's fun and to fill in the gaps that I likely have from not getting a computer science degree. Grokking Algorithms by Aditya Y. Bhargava was a great place to start that journey.",
