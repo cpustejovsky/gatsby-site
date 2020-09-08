@@ -7,6 +7,7 @@ import {
   FormControlLabel,
   Typography,
 } from "@material-ui/core"
+import Book from "../Book"
 import GrokkingAlgos from "../images/grokkingalgos"
 import GTD from "../images/gtd"
 import PragProg from "../images/pragprog"
@@ -170,43 +171,26 @@ const ReadingList = () => {
             </Grid>
           </Grid>
           <br />
-          <Grid container>
-            <Grid item md={4}>
-              <TDDGo />
-            </Grid>
-            <Grid item md={8} className={classes.description}>
-              <Typography variant="h6">Learn Go with tests</Typography>
-              <p>
-                I believe both Golang and TDD are excelent tools for writing
-                scalable, maintainable code so it made sense to improve my
-                Golang skills while also getting into the habit of doing
-                test-driven development.
-              </p>
-              <p>
-                <strong>
-                  Full Review on{" "}
-                  <a
-                    rel="noreferrer noopener"
-                    href="https://dev.to/cpustejovsky/learn-go-with-tests-book-review-na4"
-                  >
-                    DEV.to
-                  </a>
-                </strong>
-              </p>
-              <p>
-                <strong>
-                  Read on{" "}
-                  <a
-                    rel="noreferrer noopener"
-                    href="https://quii.gitbook.io/learn-go-with-tests/"
-                  >
-                    GitBook
-                  </a>
-                </strong>
-              </p>
-            </Grid>
-          </Grid>
-          <br />
+          <Book
+            BookIMG={() => <TDDGo />}
+            title="Learn Go with tests"
+            textArr={[
+              "I believe both Golang and TDD are excelent tools for writing scalable, maintainable code so it made sense to improve my Golang skills while also getting into the habit of doing test-driven development.",
+            ]}
+            ctaArr={[
+              {
+                text: "Full Review on DEV.to",
+                link:
+                  "https://dev.to/cpustejovsky/learn-go-with-tests-book-review-na4",
+              },
+              {
+                text: "Read on GitBook",
+                link:
+                  "https://quii.gitbook.io/learn-go-with-tests/",
+              },
+            ]}
+            classes = {classes}
+          />
           <Grid container>
             <Grid item md={4}>
               <GrokkingAlgos />
