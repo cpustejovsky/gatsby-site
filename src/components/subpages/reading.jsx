@@ -42,9 +42,9 @@ const ReadingList = () => {
             this book will be a great help in that endeavour.
           </p>
           <strong>
-            Buy on{" "}
+            Buy other{" "}
             <a rel="noreferrer noopener" href="https://www.calhoun.io/">
-              Other Courses and Resources by Jon Calhoun
+              courses and resources by Jon Calhoun
             </a>
           </strong>
         </Grid>
