@@ -8,17 +8,51 @@ const Projects = () => {
   const [estuary, openEstuary] = useState(false)
   const [dynoWaker, openDynoWaker] = useState(false)
   const [gdpr, openGdpr] = useState(false)
-  const [signingApp, openSigningApp] = useState(false)
   const [blog, openBlog] = useState(false)
   const [headlessCms, openHeadlessCms] = useState(false)
   const [lifeTogetherCalculator, openLifeTogetherCalculator] = useState(false)
+  const [twitterBot, openTwitterBot] = useState(false)
   return (
     <Container id="projects" className="site__section">
       <h1>Projects</h1>
       <p>
-        Here is a growing list of projects I am working on <strong>(click for details)</strong>
+        Here is a growing list of projects I'm working on or have worked on in
+        the past <strong>(click for details)</strong>
       </p>
       <hr />
+      <div
+        onClick={() => openTwitterBot(!twitterBot)}
+        aria-controls="twitterBot"
+        aria-expanded={twitterBot}
+        className="projects__collapse-header"
+      >
+        <h4>Twitter Bot</h4>
+        <p>(Golang)</p>
+      </div>
+      <Collapse in={twitterBot}>
+        <div id="twitterBot">
+          <p>
+            My first Go application, this Twitter bot is design to give me less
+            reasons to spend check on Twitter by sending me Twitter udpates from
+            users I want to keep up with.
+          </p>
+          <ul>
+            <li>
+              <a rel="noreferrer noopener" href="https://cpustejovsky-go-twitter-bot.herokuapp.com/">
+                Twitter Bot (It's uaully asleep unless I hit a specific route on it)
+              </a>
+            </li>
+            <li>
+              <a
+                rel="noreferrer noopener"
+                href="https://github.com/cpustejovsky/go_twitter_bot"
+              >
+                Code
+              </a>
+            </li>
+          </ul>
+        </div>
+      </Collapse>
       <div
         onClick={() => openEstuary(!estuary)}
         aria-controls="estuary"
@@ -53,9 +87,7 @@ const Projects = () => {
             of conscious writing.
           </p>
           <p>
-            I'll be expanding and refining it over the course of 2020, both to
-            improve my development skills and create a handy tool for being a
-            more effective developer and person.
+            During September and October 2020, I'll be rebuilding the backend in Golang.
           </p>
           <ul>
             <li>
@@ -139,7 +171,7 @@ const Projects = () => {
               <h3>CSS Redesign</h3>
               <BlogRefresh />
             </Grid>
-          </Grid >
+          </Grid>
         </div>
       </Collapse>
       <div
@@ -190,41 +222,6 @@ const Projects = () => {
                 href="https://www.npmjs.com/package/cpustejovsky-dyno-waker"
               >
                 NPM link
-              </a>
-            </li>
-          </ul>
-        </div>
-      </Collapse>
-      <div
-        onClick={() => openSigningApp(!signingApp)}
-        aria-expanded={signingApp}
-        className="projects__collapse-header"
-      >
-        <h4>Public/Private Key Signing App</h4>
-        <p>(NodeJS)</p>
-      </div>
-      <Collapse in={signingApp}>
-        <div>
-          <p>
-            Application I worked on to better understand cryptography and
-            asynchronous code.{" "}
-            <strong>
-              This probject helped me get a better understanding of NodeJS's
-              Crypto module.
-            </strong>{" "}
-            It should go without saying, but{" "}
-            <strong>
-              do not use this! I'm rolling my own cryptography here for learning
-              purposes only.
-            </strong>
-          </p>
-          <ul>
-            <li>
-              <a
-                rel="noreferrer noopener"
-                href="https://github.com/cpustejovsky/CharlesPustejovsky-2019-v2"
-              >
-                Code
               </a>
             </li>
           </ul>
