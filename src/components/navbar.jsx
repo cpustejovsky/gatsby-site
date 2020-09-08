@@ -8,6 +8,7 @@ import {
   Menu,
   MenuItem,
   Hidden,
+  Link as MuiLink
 } from "@material-ui/core/"
 import { makeStyles } from "@material-ui/core/styles"
 import { Link } from "gatsby"
@@ -70,22 +71,22 @@ const NavBar = () => {
           </MenuItem>
         </div>
         <div className={classes.menuItemsRight}>
-          <MenuItem component={Link} href="https://github.com/cpustejovsky">
+          <MenuItem component={MuiLink} target="_blank" referrer="noreferrer noopener" href="https://github.com/cpustejovsky">
             <i className="fab fa-github"></i>
           </MenuItem>
           <MenuItem
-            component={Link}
-            href="https://www.linkedin.com/in/cpustejovsky/"
+            component={MuiLink}
+            target="_blank" referrer="noreferrer noopener" href="https://www.linkedin.com/in/cpustejovsky/"
           >
             <i className="fab fa-linkedin"></i>
           </MenuItem>
-          <MenuItem component={Link} href="https://twitter.com/CCPustejovsky">
+          <MenuItem component={MuiLink} target="_blank" referrer="noreferrer noopener" href="https://twitter.com/CCPustejovsky">
             <i className="fab fa-twitter-square"></i>
           </MenuItem>
-          <MenuItem component={Link} href="https://dev.to/cpustejovsky">
+          <MenuItem component={MuiLink} target="_blank" referrer="noreferrer noopener" href="https://dev.to/cpustejovsky">
             <i className="fab fa-dev"></i>
           </MenuItem>
-          <MenuItem component={Link} href="mailto:charles@cpustejovsky.com">
+          <MenuItem component={MuiLink} target="_blank" referrer="noreferrer noopener" href="mailto:charles@cpustejovsky.com">
             <i className="far fa-envelope"></i>
           </MenuItem>
         </div>
