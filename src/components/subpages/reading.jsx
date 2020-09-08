@@ -7,7 +7,7 @@ import {
   Typography,
   Grid,
 } from "@material-ui/core"
-import books from "../books"
+import books from "../books.tsx"
 import Book from "../Book"
 
 const ReadingList = () => {

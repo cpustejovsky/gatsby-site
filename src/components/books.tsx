@@ -6,7 +6,15 @@ import GTD from "./images/gtd"
 import PragProg from "./images/pragprog"
 import LetsGo from "./images/lets_go"
 
-const books = [
+type Book = {
+  read: boolean,
+  BookImg: ()=>JSX.Element,
+  title: string,
+  textArr: string[] | JSX.Element[],
+  ctaArr: object[],
+}
+
+const books: Book[] = [
   {
     read: false,
     BookImg: () => <LetsGo />,
