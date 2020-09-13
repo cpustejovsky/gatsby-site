@@ -3,7 +3,25 @@ import { Container, CircularProgress } from "@material-ui/core"
 import ARCHIVIST from "../images/archivist"
 import axios from "axios"
 import parse from "html-react-parser"
+
+import { makeStyles } from "@material-ui/core/styles"
+
+const useStyles = makeStyles(theme => ({
+  devto: {
+    '& img': {
+      maxWidth: "100%"
+    },
+  },
+  spinnerContainer: {
+    width: "100%",
+    display: "flex",
+    flexFlow: "column nowrap",
+    alignItems: "center",
+  },
+}))
+
 const Resources = () => {
+  const classes = useStyles()
   const [apiData, setApiData] = useState(false)
   const fetchApiData = async () => {
     let res = await axios.get("https://dev.to/api/articles/281175")
@@ -16,14 +34,7 @@ const Resources = () => {
   const loadSpinner = () => {
     return (
       <>
-        <div
-          style={{
-            width: "100%",
-            display: "flex",
-            flexFlow: "column nowrap",
-            alignItems: "center",
-          }}
-        >
+        <div className={classes.spinnerContainer}>
           <CircularProgress style={{ width: "5rem", height: "5rem" }} />
           <br />
           <p>
@@ -46,7 +57,7 @@ const Resources = () => {
       <h1>Resources</h1>
       <ARCHIVIST />
       <br></br>
-      <div className="devto">{apiData ? apiData : loadSpinner()}</div>
+      <div className={classes.devto}>{apiData ? apiData : loadSpinner()}</div>
       <hr />
       <p>
         Resources are hosted on{" "}
