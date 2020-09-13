@@ -9,10 +9,6 @@ const ResourcesPage = () => {
         <div className="site">
           <main className="site__landing">
             <Resources />
-            <footer className="site__footer">
-              Cpustejovsky <i className="far fa-thumbs-up"></i>,{" "}
-              {new Date().getFullYear()}
-            </footer>
           </main>
         </div>
       </Layout>
