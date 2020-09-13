@@ -15,8 +15,14 @@ export default function Book(props) {
   return (
     <>
       <Grid container>
-        <Grid item md={4} style={{boxShadow: "0 -1px 10px 1px rgba(0, 0, 0, .5)"}}>
-          <Img/>
+        <Grid
+          item
+          md={4}
+          style={{ boxShadow: "1px 0px 10px 1px rgba(0, 0, 0, .5)" }}
+        >
+          <a target="_blank" rel="noreferrer noopener" href={ctaArr[0].link}>
+            <Img />
+          </a>
         </Grid>
         <Grid item md={8} className={classes.description}>
           <Typography variant="h6">{title}</Typography>
@@ -26,7 +32,7 @@ export default function Book(props) {
           {ctaArr.map(cta => (
             <p>
               <strong>
-                <a rel="noreferrer noopener" href={cta.link}>
+                <a target="_blank" rel="noreferrer noopener" href={cta.link}>
                   {cta.text}
                 </a>
               </strong>
