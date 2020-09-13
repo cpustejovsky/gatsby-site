@@ -36,7 +36,7 @@ const goBook: Book = {
   ],
 }
 const letsGo: Book = {
-  read: true,
+  read: false,
   Img: () => <LetsGo />,
   title: "Let's Go",
   textArr: [
