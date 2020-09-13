@@ -7,12 +7,17 @@ import PragProg from "./images/pragprog"
 import LetsGo from "./images/lets_go"
 import GoBook from "./images/gobook"
 
+type CTA = {
+  text: string,
+  link: string
+}
+
 type Book = {
   read: boolean,
   Img: () => JSX.Element,
   title: string,
-  textArr: string[] | JSX.Element[],
-  ctaArr: object[],
+  textArr: (string | JSX.Element)[],
+  ctaArr: CTA[],
 }
 
 const goBook: Book = {

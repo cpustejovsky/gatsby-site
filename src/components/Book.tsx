@@ -8,7 +8,21 @@ const useStyles = makeStyles(theme => ({
     paddingLeft: "2%",
   },
 }))
-export default function Book(props) {
+
+//TODO: sort out duplicate type declaration between books and Book
+type CTA = {
+  text: string,
+  link: string
+}
+
+type Props = {
+  Img: () => JSX.Element,
+  title: string,
+  textArr: (string | JSX.Element)[],
+  ctaArr: CTA[],
+}
+
+export default function Book(props: Props) {
   const { Img, title, textArr, ctaArr } = props
   const classes = useStyles()
 
