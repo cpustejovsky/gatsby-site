@@ -5,6 +5,7 @@ import GrokkingAlgos from "./images/grokkingalgos"
 import GTD from "./images/gtd"
 import PragProg from "./images/pragprog"
 import LetsGo from "./images/lets_go"
+import GoBook from "./images/gobook"
 
 type Book = {
   read: boolean,
@@ -14,15 +15,37 @@ type Book = {
   ctaArr: object[],
 }
 
-const letsGo: Book = {
+const goBook: Book = {
   read: false,
+  Img: () => <GoBook />,
+  title: "The Go Programming Language",
+  textArr: [
+    <p>
+      I'm going through this book and will be finishing it around the end of Hacktoberfest.
+    </p>,
+    <p>
+      Brian Kernighan has already written [one classic programming book](https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628), so I believe I'm in good hands
+    </p>
+  ],
+  ctaArr: [
+    {
+      text: "Visit the Book's Site",
+      link:
+        "https://www.gopl.io/",
+    },
+  ],
+}
+const letsGo: Book = {
+  read: true,
   Img: () => <LetsGo />,
   title: "Let's Go",
   textArr: [
     <p>
-      My goal for September 2020 is to rebuild Estuary's backend in Go and
-      this book will be a great help in that endeavour.
+      This book is absolutely wonderful for any newcomer to Go wanting to dive into web development.
     </p>,
+    <p>
+      Alex Edwards shows you how to build scalable, composable, maintainable backends with Go.
+    </p>
   ],
   ctaArr: [
     {
@@ -129,6 +152,7 @@ const grokkingAlgos = {
 }
 
 const books: Book[] = [
+  goBook,
   letsGo,
   tddGo,
   pragProg,

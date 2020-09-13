@@ -15,8 +15,8 @@ export default function Book(props) {
   return (
     <>
       <Grid container>
-        <Grid item md={4}>
-          <Img />
+        <Grid item md={4} style={{boxShadow: "0 -1px 10px 1px rgba(0, 0, 0, .5)"}}>
+          <Img/>
         </Grid>
         <Grid item md={8} className={classes.description}>
           <Typography variant="h6">{title}</Typography>
