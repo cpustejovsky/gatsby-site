@@ -98,7 +98,7 @@ const Projects = () => {
             <li>
               <a
                 rel="noreferrer noopener"
-                href="https://github.com/cpustejovsky/estuary"
+                href="https://github.com/cpustejovsky/estuary-node"
               >
                 Code
               </a>
