@@ -41,7 +41,7 @@ const goBook: Book = {
   ],
 }
 const letsGo: Book = {
-  read: false,
+  read: true,
   Img: () => <LetsGo />,
   title: "Let's Go",
   textArr: [
@@ -53,6 +53,10 @@ const letsGo: Book = {
     </p>
   ],
   ctaArr: [
+    {
+      text: "Full Review on DEV.to",
+      link: "https://dev.to/cpustejovsky/let-s-go-book-review-1909"
+    },
     {
       text: "Buy on Alex Edward's Website",
       link:
