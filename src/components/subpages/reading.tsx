@@ -7,17 +7,19 @@ import {
   Typography,
   Grid,
 } from "@material-ui/core"
-import books from "../books.tsx"
+import books from "../books"
 import Book from "../Book"
 
-const ReadingList = () => {
-  const [booksRead, toggleBooksRead] = useState(false)
-  let alreadyRead = []
-  let currentlyReading = []
+type Books = JSX.Element[];
+
+export default function ReadingList (){
+  const [booksRead, toggleBooksRead] = useState<boolean>(false)
+  let alreadyRead: Books = [];
+  let currentlyReading: Books = []
 
   books.forEach(book => {
     const { Img, title, textArr, ctaArr, read } = book
-    let bookComp = (
+    let bookComp: JSX.Element = (
       <Book Img={Img} title={title} textArr={textArr} ctaArr={ctaArr} />
     )
     read
@@ -32,7 +34,7 @@ const ReadingList = () => {
       </Typography>{" "}
       <hr style={{ border: "1px solid #bababa" }} />
       {currentlyReading}
-      <Grid align="start">
+      <Grid>
         <Grid item>
           <Typography variant="h5" style={{ marginTop: "5%" }}>
             Books I've Read
@@ -60,5 +62,3 @@ const ReadingList = () => {
     </Container>
   )
 }
-
-export default ReadingList
