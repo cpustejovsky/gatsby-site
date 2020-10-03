@@ -38,8 +38,12 @@ const Projects = () => {
           </p>
           <ul>
             <li>
-              <a rel="noreferrer noopener" href="https://cpustejovsky-go-twitter-bot.herokuapp.com/">
-                Twitter Bot (It's uaully asleep unless I hit a specific route on it)
+              <a
+                rel="noreferrer noopener"
+                href="https://cpustejovsky-go-twitter-bot.herokuapp.com/"
+              >
+                Twitter Bot (It's uaully asleep unless I hit a specific route on
+                it)
               </a>
             </li>
             <li>
@@ -60,7 +64,7 @@ const Projects = () => {
         className="projects__collapse-header"
       >
         <h4>Estuary</h4>
-        <p>(React, NodeJS, MongoDB)</p>
+        <p>(React/TypeScript, Golang, PostgreSQL)</p>
       </div>
       <Collapse in={estuary}>
         <div id="estuary">
@@ -82,17 +86,21 @@ const Projects = () => {
             portfolio.
           </p>
           <p>
-            So far, it's a MERN app that can record stream of consciousness
-            writing and notes and pluck notes you want to save from your stream
-            of conscious writing.
-          </p>
-          <p>
-            During September and October 2020, I'll be rebuilding the backend in Golang.
+            I'm currently rebuilding the client in TypeScript, the server in
+            Golang, and the database in PostgreSQL.
           </p>
           <ul>
             <li>
+              <a
+                rel="noreferrer noopener"
+                href="https://github.com/cpustejovsky/estuary"
+              >
+                Golang Refactor (WIP)
+              </a>
+            </li>
+            <li>
               <a rel="noreferrer noopener" href="https://www.estuaryapp.com/">
-                Estuary
+                Estuary (current app using React (JS), NodeJS, and MongoDB)
               </a>
             </li>
             <li>
@@ -100,15 +108,7 @@ const Projects = () => {
                 rel="noreferrer noopener"
                 href="https://github.com/cpustejovsky/estuary-node"
               >
-                Code
-              </a>
-            </li>
-            <li>
-              <a
-                rel="noreferrer noopener"
-                href="https://github.com/cpustejovsky/estuary"
-              >
-                Golang Refactor (WIP)
+                Code for original app
               </a>
             </li>
           </ul>
@@ -120,7 +120,7 @@ const Projects = () => {
         className="projects__collapse-header"
       >
         <h4>Life Together Calculator</h4>
-        <p>(ReactJS)</p>
+        <p>(React/TypeScript)</p>
       </div>
       <Collapse in={lifeTogetherCalculator}>
         <div>
