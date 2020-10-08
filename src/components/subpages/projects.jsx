@@ -95,7 +95,15 @@ const Projects = () => {
                 rel="noreferrer noopener"
                 href="https://github.com/cpustejovsky/estuary"
               >
-                Golang Refactor (WIP)
+                Golang Server Refactor (WIP)
+              </a>
+            </li>
+            <li>
+              <a
+                rel="noreferrer noopener"
+                href="https://github.com/cpustejovsky/estuary-client"
+              >
+                TypeScript Client Refactor (WIP)
               </a>
             </li>
             <li>
