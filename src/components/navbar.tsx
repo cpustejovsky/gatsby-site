@@ -71,22 +71,22 @@ const NavBar = () => {
           </MenuItem>
         </div>
         <div className={classes.menuItemsRight}>
-          <MenuItem component={MuiLink} target="_blank" referrer="noreferrer noopener" href="https://github.com/cpustejovsky">
+          <MenuItem component={MuiLink} target="_blank" rel="noreferrer noopener" href="https://github.com/cpustejovsky">
             <i className="fab fa-github"></i>
           </MenuItem>
           <MenuItem
             component={MuiLink}
-            target="_blank" referrer="noreferrer noopener" href="https://www.linkedin.com/in/cpustejovsky/"
+            target="_blank" rel="noreferrer noopener" href="https://www.linkedin.com/in/cpustejovsky/"
           >
             <i className="fab fa-linkedin"></i>
           </MenuItem>
-          <MenuItem component={MuiLink} target="_blank" referrer="noreferrer noopener" href="https://twitter.com/CCPustejovsky">
+          <MenuItem component={MuiLink} target="_blank" rel="noreferrer noopener" href="https://twitter.com/CCPustejovsky">
             <i className="fab fa-twitter-square"></i>
           </MenuItem>
-          <MenuItem component={MuiLink} target="_blank" referrer="noreferrer noopener" href="https://dev.to/cpustejovsky">
+          <MenuItem component={MuiLink} target="_blank" rel="noreferrer noopener" href="https://dev.to/cpustejovsky">
             <i className="fab fa-dev"></i>
           </MenuItem>
-          <MenuItem component={MuiLink} target="_blank" referrer="noreferrer noopener" href="mailto:charles@cpustejovsky.com">
+          <MenuItem component={MuiLink} target="_blank" rel="noreferrer noopener" href="mailto:charles@cpustejovsky.com">
             <i className="far fa-envelope"></i>
           </MenuItem>
         </div>
@@ -96,11 +96,11 @@ const NavBar = () => {
   }
   return (
     <>
-      <AppBar color="white" position="fixed">
+      <AppBar color="default" position="fixed">
         <Toolbar>
           <Typography
             component={Link}
-            href="/"
+            to="/"
             variant="h5"
             style={{
               color: "black",
@@ -137,7 +137,7 @@ const NavBar = () => {
               </IconButton>
             </div>
           </Hidden>
-          <Hidden smDown className={classes.menuContainer}>
+          <Hidden smDown>
             {renderMenu()}
           </Hidden>
         </Toolbar>
