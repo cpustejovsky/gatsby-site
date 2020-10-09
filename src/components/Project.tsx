@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, { useState } from "react"
 
 import { Grid, Collapse } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
@@ -32,7 +32,7 @@ type Props = {
 }
 
 export default function Project(props: Props) {
-  const { name, title, languages, content, links} = props 
+  const { name, title, languages, content, links } = props
   const [open, openCollapse] = useState(false)
 
   const classes = useStyles()
