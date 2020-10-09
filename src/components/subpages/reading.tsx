@@ -7,7 +7,7 @@ import {
   Typography,
   Grid,
 } from "@material-ui/core"
-import books from "../books"
+import books from "../lists/booklist"
 import Book from "../Book"
 
 type Books = JSX.Element[];

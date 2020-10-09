@@ -3,15 +3,27 @@ import { Container, Grid, Collapse } from "@material-ui/core"
 import BlogOriginal from "../images/blog_original"
 import BlogRefresh from "../images/blog_refresh"
 import BlogHeadlessCMS from "../images/blog_headless_cms"
-
+import projects from "../lists/projectlist"
+import Project from "../Project"
 const Projects = () => {
-  const [estuary, openEstuary] = useState(false)
   const [dynoWaker, openDynoWaker] = useState(false)
   const [gdpr, openGdpr] = useState(false)
   const [blog, openBlog] = useState(false)
   const [headlessCms, openHeadlessCms] = useState(false)
   const [lifeTogetherCalculator, openLifeTogetherCalculator] = useState(false)
-  const [twitterBot, openTwitterBot] = useState(false)
+  const renderProjects = () => projects.map(project => {
+    const { name, title, languages, content, links } = project
+    return (
+      <Project
+        name={name}
+        title={title}
+        languages={languages}
+        content={content}
+        links={links}
+      />
+    )
+  })
+  console.log(projects)
   return (
     <Container id="projects" className="site__section">
       <h1>Projects</h1>
@@ -20,108 +32,7 @@ const Projects = () => {
         the past <strong>(click for details)</strong>
       </p>
       <hr />
-      <div
-        onClick={() => openTwitterBot(!twitterBot)}
-        aria-controls="twitterBot"
-        aria-expanded={twitterBot}
-        className="projects__collapse-header"
-      >
-        <h4>Twitter Bot</h4>
-        <p>(Golang)</p>
-      </div>
-      <Collapse in={twitterBot}>
-        <div id="twitterBot">
-          <p>
-            My first Go application, this Twitter bot is design to give me less
-            reasons to spend check on Twitter by sending me Twitter udpates from
-            users I want to keep up with.
-          </p>
-          <ul>
-            <li>
-              <a
-                rel="noreferrer noopener"
-                href="https://cpustejovsky-go-twitter-bot.herokuapp.com/"
-              >
-                Twitter Bot (It's uaully asleep unless I hit a specific route on
-                it)
-              </a>
-            </li>
-            <li>
-              <a
-                rel="noreferrer noopener"
-                href="https://github.com/cpustejovsky/go_twitter_bot"
-              >
-                Code
-              </a>
-            </li>
-          </ul>
-        </div>
-      </Collapse>
-      <div
-        onClick={() => openEstuary(!estuary)}
-        aria-controls="estuary"
-        aria-expanded={estuary}
-        className="projects__collapse-header"
-      >
-        <h4>Estuary</h4>
-        <p>(React/TypeScript, Golang, PostgreSQL)</p>
-      </div>
-      <Collapse in={estuary}>
-        <div id="estuary">
-          <p>
-            During Thanksgiving weekend 2019, I started reading{" "}
-            <a
-              rel="noreferrer noopener"
-              target="_blank"
-              href="https://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity/dp/0143126563"
-            >
-              Getting Things Done by David Allen
-            </a>{" "}
-            and had the idea to turn Estuary into a MERN app that could
-            facilitate the GTD process.
-          </p>
-          <p>
-            That would have the dual benefit of cementing these practices for me
-            and also building a robust app that I can proudly show off in my
-            portfolio.
-          </p>
-          <p>
-            I'm currently rebuilding the client in TypeScript, the server in
-            Golang, and the database in PostgreSQL.
-          </p>
-          <ul>
-            <li>
-              <a
-                rel="noreferrer noopener"
-                href="https://github.com/cpustejovsky/estuary"
-              >
-                Golang Server Refactor (WIP)
-              </a>
-            </li>
-            <li>
-              <a
-                rel="noreferrer noopener"
-                href="https://github.com/cpustejovsky/estuary-client"
-              >
-                TypeScript Client Refactor (WIP)
-              </a>
-            </li>
-            <li>
-              <a rel="noreferrer noopener" href="https://www.estuaryapp.com/">
-                Estuary (current app using React (JS), NodeJS, and MongoDB)
-              </a>
-            </li>
-            <li>
-              <a
-                rel="noreferrer noopener"
-                href="https://github.com/cpustejovsky/estuary-node"
-              >
-                Code for original app
-              </a>
-            </li>
-          </ul>
-        </div>
-      </Collapse>
+      {renderProjects()}
       <div
         onClick={() => openLifeTogetherCalculator(!lifeTogetherCalculator)}
         aria-expanded={lifeTogetherCalculator}
@@ -194,7 +105,7 @@ const Projects = () => {
         onClick={() => openHeadlessCms(!headlessCms)}
         className="projects__collapse-header"
       >
-        <h4>BitPay Headless CMS</h4> <p>(Nuxt.js)</p>
+        <h4>BitPay Headless CMS</h4> <p>(Nuxt.js / Vue.js)</p>
       </div>
       <Collapse in={headlessCms}>
         <div>

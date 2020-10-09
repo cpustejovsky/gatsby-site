@@ -1,11 +1,11 @@
 import React from "react"
-import TDDGo from "./images/tdd_go"
-import Scrum from "./images/scrum"
-import GrokkingAlgos from "./images/grokkingalgos"
-import GTD from "./images/gtd"
-import PragProg from "./images/pragprog"
-import LetsGo from "./images/lets_go"
-import GoBook from "./images/gobook"
+import TDDGo from "../images/tdd_go"
+import Scrum from "../images/scrum"
+import GrokkingAlgos from "../images/grokkingalgos"
+import GTD from "../images/gtd"
+import PragProg from "../images/pragprog"
+import LetsGo from "../images/lets_go"
+import GoBook from "../images/gobook"
 
 type CTA = {
   text: string,
