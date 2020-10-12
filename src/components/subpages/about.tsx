@@ -10,16 +10,7 @@ const About = () => {
       <h1>About Me</h1>
       <Grid container>
         <Grid item md={12}>
-          <Grid container justify="center" alignItems="flex-end">
-            <Grid item xs={7}>
-              <Cpustejovsky />
-            </Grid>
-            <Grid item xs={5}>
-              <CpustejovskyGopher />
-            </Grid>
-          </Grid>
-          <br />
-          <p>I'm Charles Pustejovsky.</p>
+        <p>I'm Charles Pustejovsky.</p>
           <p>
             I love learning and never get bored whether I'm reading a SCOTUS
             statement or an essay on grain shipments or the most dry technical
@@ -38,9 +29,16 @@ const About = () => {
               stupid" because that's the only way I'll grow.
             </strong>
           </p>
+          <Grid container justify="center" alignItems="flex-end">
+            <Grid item xs={6}>
+              <Cpustejovsky />
+            </Grid>
+            <Grid item xs={4}>
+              <CpustejovskyGopher />
+            </Grid>
+          </Grid>
         </Grid>
       </Grid>
-      <hr />
       <Grid container>
         <Grid item xs={12} md={6}>
           <div
