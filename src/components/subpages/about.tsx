@@ -3,8 +3,8 @@ import { Container, Grid, Collapse } from "@material-ui/core"
 import Cpustejovsky from "../images/cpustejovsky"
 import CpustejovskyGopher from "../images/cpustejovskyGopher"
 const About = () => {
-  const [skills, openSkills] = useState<boolean>(false)
-  const [interests, openInterests] = useState<boolean>(false)
+  const [skills, openSkills] = useState<boolean>(true)
+  const [interests, openInterests] = useState<boolean>(true)
   return (
     <Container id="about" className="site__section">
       <h1>About Me</h1>

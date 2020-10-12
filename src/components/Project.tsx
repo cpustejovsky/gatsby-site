@@ -33,7 +33,7 @@ type Props = {
 
 export default function Project(props: Props) {
   const { name, title, languages, content, links } = props
-  const [open, openCollapse] = useState(false)
+  const [open, openCollapse] = useState(true)
 
   const classes = useStyles()
 

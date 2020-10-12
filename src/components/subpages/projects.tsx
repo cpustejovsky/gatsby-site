@@ -49,7 +49,7 @@ export default function Projects() {
       />
       <p>
         Here is a growing list of projects I'm working on or have worked on in
-        the past <strong>(click for details)</strong>
+        the past <strong>(click to close)</strong>
       </p>
       <hr />
       {currentProjects}
