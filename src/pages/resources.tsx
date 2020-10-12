@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../components/layout.jsx"
+import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Resources from "../components/subpages/resources"
 const ResourcesPage = () => {
