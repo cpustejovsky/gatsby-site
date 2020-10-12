@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./Header.tsx"
+import Header from "./Header"
 import "../scss/layout.scss"
 
 const Layout = ({ children }) => {
@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
         <main className="site__content">
           {children}{" "}
           <footer className="site__footer">
-            cpustejovsky <i class="far fa-thumbs-up"></i>{" "}|{" "}
+            cpustejovsky <i className="far fa-thumbs-up"></i>{" "}|{" "}
             {new Date().getFullYear()}
           </footer>
         </main>
