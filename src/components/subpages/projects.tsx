@@ -51,7 +51,6 @@ export default function Projects() {
         Here is a growing list of projects I'm working on or have worked on in
         the past <strong>(click to close)</strong>
       </p>
-      <hr />
       {currentProjects}
       <Collapse in={checked}>{pastProjects}</Collapse>
     </Container>

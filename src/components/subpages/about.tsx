@@ -49,19 +49,19 @@ const About = () => {
           </div>
           <Collapse in={skills}>
             <ul>
-              <li>Golang</li>
+              <li>Go</li>
+              <li>TypeScript</li>
+              <li>PostgreSQL</li>
               <li>JavaScript</li>
+              <li>React/Redux</li>
               <li>NodeJS</li>
               <li>MongoDB</li>
-              <li>React/Redux</li>
               <li>GatsbyJS</li>
               <li>VueJS</li>
               <li>Nuxt.js</li>
               <li>CSS</li>
               <li>Git</li>
               <li>Python (Beginner)</li>
-              <li>Django (Beginner)</li>
-              <li>PostgreSQL (Beginner)</li>
             </ul>
           </Collapse>
         </Grid>
