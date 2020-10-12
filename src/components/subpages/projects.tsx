@@ -8,15 +8,17 @@ import {
 import projects from "../lists/projectlist"
 import Project from "../Project"
 
-export default function Projects() {
-  const [checked, setChecked] = useState(false)
+type Projects = JSX.Element[];
 
-  let currentProjects = []
-  let pastProjects = []
+export default function Projects() {
+  const [checked, setChecked] = useState<boolean>(false)
+
+  let currentProjects: Projects = []
+  let pastProjects: Projects = []
 
   projects.forEach(project => {
     const { name, title, languages, content, links, current } = project
-    let projectComp = (
+    let projectComp: JSX.Element = (
       <Project
         name={name}
         title={title}
