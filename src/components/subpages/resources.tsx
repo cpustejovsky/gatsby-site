@@ -6,7 +6,7 @@ import parse from "html-react-parser"
 
 import { makeStyles } from "@material-ui/core/styles"
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(() => ({
   devto: {
     '& img': {
       maxWidth: "100%"
@@ -20,9 +20,11 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
+type ParsedData = JSX.Element[] | JSX.Element
+
 const Resources = () => {
   const classes = useStyles()
-  const [apiData, setApiData] = useState(false)
+  const [apiData, setApiData] = useState<ParsedData>(null)
   const fetchApiData = async () => {
     let res = await axios.get("https://dev.to/api/articles/281175")
     setApiData(parse(res.data.body_html))
@@ -57,7 +59,7 @@ const Resources = () => {
       <h1>Resources</h1>
       <ARCHIVIST />
       <br></br>
-      <div className={classes.devto}>{apiData ? apiData : loadSpinner()}</div>
+      <div className={classes.devto}>{apiData !== null ? apiData : loadSpinner()}</div>
       <hr />
       <p>
         Resources are hosted on{" "}
