@@ -33,15 +33,6 @@ module.exports = {
         anonymize: true,
       },
     },
-    {
-      resolve: "gatsby-plugin-web-font-loader",
-      options: {
-        custom: {
-          families: ["Overseer"],
-          urls: ["/fonts/fonts.css"],
-        },
-      },
-    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
