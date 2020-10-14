@@ -6,11 +6,11 @@ export default function HTML(props): JSX.Element {
     <html {...props.htmlAttributes}>
       <head>
         <link
-          rel="preload"
+          rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
         />
         <link
-          rel="preload"
+          rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.12.1/css/v4-shims.css"
         />
         <meta charSet="utf-8" />
