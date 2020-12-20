@@ -50,18 +50,11 @@ const About = () => {
           <Collapse in={skills}>
             <ul>
               <li>Go</li>
-              <li>TypeScript</li>
-              <li>PostgreSQL</li>
-              <li>JavaScript</li>
-              <li>React/Redux</li>
+              <li>SQL</li>
               <li>NodeJS</li>
+              <li>TypeScript</li>
+              <li>React/Redux</li>
               <li>MongoDB</li>
-              <li>GatsbyJS</li>
-              <li>VueJS</li>
-              <li>Nuxt.js</li>
-              <li>CSS</li>
-              <li>Git</li>
-              <li>Python (Beginner)</li>
             </ul>
           </Collapse>
         </Grid>
@@ -77,11 +70,9 @@ const About = () => {
               <li>Cybersecurity</li>
               <li>Functional Programming</li>
               <li>Hacking Productivity</li>
-              <li>Accessibility in Design</li>
               <li>Classics (Greco-Roman)</li>
               <li>Science Fiction and Fantasy</li>
               <li>Philosophy</li>
-              <li>Baking</li>
             </ul>
           </Collapse>
         </Grid>
