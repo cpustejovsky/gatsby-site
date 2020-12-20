@@ -26,8 +26,10 @@ const Introduction = () => (
         </p>
         {/* TODO: add blog post story */}
         <p>
-          Programming is my ikigai which is why I continually learn and grow and
-          work on things that provides value to myself and others.
+          Programming is my ikigai. That's why I always seek to learned and grow to better provide value with code. 
+        </p>
+        <p>
+        It's why I love Go, Test-Driven Development, and Agile/Scrum. They are all tools that help me provide value to my team and help the software we write provide value to users.
         </p>
         <hr />
         <div>
