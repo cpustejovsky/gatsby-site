@@ -24,14 +24,14 @@ const twitterBot: Project = {
   name: "twitterBot",
   title: "Twitter Bot",
   languages: "Go",
-  content: [`My first Go application, this Twitter bot is design to give me less
-  reasons to spend check on Twitter by sending me Twitter udpates from
-  users I want to keep up with.`],
+  content: [`My first Go application, this Twitter bot gives me less
+  reasons to check Twitter by sending me udpates from
+  people I want to keep up with.`],
   links: [
     {
       text:
-        "Twitter Bot (It's uaully asleep unless I hit a specific route on it)",
-      link: "https://cpustejovsky-go-twitter-bot.herokuapp.com/",
+        "Code",
+      link: "https://github.com/cpustejovsky/twitterbot",
     },
   ],
   current: true
