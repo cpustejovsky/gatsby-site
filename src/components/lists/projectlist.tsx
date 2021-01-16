@@ -77,8 +77,8 @@ const estuary: Project = {
     },
     {
       text:
-        "https://www.estuaryapp.com/",
-      link: "Estuary App",
+        "Estuary App",
+      link: "https://www.estuaryapp.com/",
     },
     {
       text:
