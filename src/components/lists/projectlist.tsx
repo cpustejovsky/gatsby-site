@@ -72,7 +72,7 @@ const estuary: Project = {
     },
     {
       text:
-        "TypeScript Client Refactor (WIP)",
+        "TypeScript Client Refactor",
       link: "https://github.com/cpustejovsky/estuary-client",
     },
     {
@@ -125,7 +125,7 @@ const lifeTogetherCalculator: Project = {
 }
 
 const blog: Project = {
-  name: "twitterBot",
+  name: "blog",
   title: "BitPay Blog Redesign",
   languages: "CSS/SASS",
   content: [`I forked Ghost's Casper theme and modified it with the help of an
