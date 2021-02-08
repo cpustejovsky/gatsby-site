@@ -30,11 +30,11 @@ const About = () => {
             </strong>
           </p>
           <Grid container justify="center" alignItems="flex-end">
-            <Grid item xs={6}>
-              <Cpustejovsky />
-            </Grid>
             <Grid item xs={4}>
               <CpustejovskyGopher />
+            </Grid>
+            <Grid item xs={6}>
+              <Cpustejovsky />
             </Grid>
           </Grid>
         </Grid>
@@ -51,6 +51,7 @@ const About = () => {
             <ul>
               <li>Go</li>
               <li>SQL</li>
+              <li>DynamoDB</li>
               <li>NodeJS</li>
               <li>TypeScript</li>
               <li>React/Redux</li>

@@ -6,6 +6,7 @@ import GTD from "../images/gtd"
 import PragProg from "../images/pragprog"
 import LetsGo from "../images/lets_go"
 import GoBook from "../images/gobook"
+import ConcurrencyInGo from "../images/concurrency_in_go"
 
 type CTA = {
   text: string,
@@ -20,6 +21,27 @@ type Book = {
   ctaArr: CTA[],
 }
 
+const concurrencyGo: Book = {
+  read: false,
+  Img: () => <ConcurrencyInGo />,
+  title: "Concurrency in Go",
+  textArr: [
+    <p>
+      Go is my favorite language for many reasons, but chief is how it handles concurrency. Given that, I thought it wise to dive deeper into that.
+    </p>,
+    <p>
+      Katherine Cox-Buday has written an amazing introduction into Go's concurrency primitives (goroutines and channels), libraries (<code>sync</code> and <code>context</code>), and best practices.
+    </p>,
+    <p>I'll have it finished this month (February 2021) and will likely reread it before the end of the year.</p>
+  ],
+  ctaArr: [
+    {
+      text: "Check it out on O'Reilly Media",
+      link:
+        "https://www.oreilly.com/library/view/concurrency-in-go/9781491941294/",
+    },
+  ],
+}
 const goBook: Book = {
   read: false,
   Img: () => <GoBook />,
@@ -161,6 +183,7 @@ const grokkingAlgos = {
 }
 
 const books: Book[] = [
+  concurrencyGo,
   goBook,
   letsGo,
   tddGo,
