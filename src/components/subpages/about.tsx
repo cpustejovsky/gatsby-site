@@ -10,25 +10,21 @@ const About = () => {
       <h1>About Me</h1>
       <Grid container>
         <Grid item md={12}>
-        <p>I'm Charles Pustejovsky.</p>
-          <p>
-            I love learning and never get bored whether I'm reading a SCOTUS
-            statement or an essay on grain shipments or the most dry technical
-            documentation. Of course, I can't learn programming just by reading
-            about it (<strong>I tried!</strong>).
-          </p>
-          <p>
-            Instead, I needed to
-            <strong> learn by doing</strong> which took me out of my comfort
-            zone, helped me stop procrastinating, and learn to fail fast and use
-            those failures to grow.
-          </p>
-          <p>
-            <strong>
-              This helped me ask more question evan at the risk of "looking
-              stupid" because that's the only way I'll grow.
-            </strong>
-          </p>
+          <Grid container md={8}>
+            <p>I'm Charles Pustejovsky.</p>
+            <p>
+              Some things you're good at. Some things are good for you. For me, programming is both.
+            </p>
+            <p>
+              That's why I love programming and why I always seek to provide value with it.
+            </p>
+            <p>
+              It's why I love Go, Test-Driven Development, and SDLC methodologies (Agile/Scrum/Kanban).
+            </p>
+            <p>
+              They are all tools that help me provide value to my team and help the software we write provide value to users.
+            </p>
+          </Grid>
           <Grid container justify="center" alignItems="flex-end">
             <Grid item xs={4}>
               <CpustejovskyGopher />

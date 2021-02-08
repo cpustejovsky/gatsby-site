@@ -28,9 +28,6 @@ const Introduction = () => (
         <p>
           Programming is my ikigai. That's why I always seek to learned and grow to better provide value with code. 
         </p>
-        <p>
-        It's why I love Go, Test-Driven Development, and Agile/Scrum. They are all tools that help me provide value to my team and help the software we write provide value to users.
-        </p>
         <hr />
         <div>
           <a href={Resume}>
