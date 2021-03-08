@@ -4,6 +4,7 @@ import Scrum from "../images/scrum"
 import GrokkingAlgos from "../images/grokkingalgos"
 import GTD from "../images/gtd"
 import PragProg from "../images/pragprog"
+import DesertFathersImg from "../images/desertfathers"
 import LetsGo from "../images/lets_go"
 import GoBook from "../images/gobook"
 import ConcurrencyInGo from "../images/concurrency_in_go"
@@ -15,6 +16,7 @@ type CTA = {
 
 type Book = {
   read: boolean,
+  recurring: boolean,
   Img: () => JSX.Element,
   title: string,
   textArr: (string | JSX.Element)[],
@@ -22,7 +24,8 @@ type Book = {
 }
 
 const concurrencyGo: Book = {
-  read: false,
+  read: true,
+  recurring: false,
   Img: () => <ConcurrencyInGo />,
   title: "Concurrency in Go",
   textArr: [
@@ -32,7 +35,7 @@ const concurrencyGo: Book = {
     <p>
       Katherine Cox-Buday has written an amazing introduction into Go's concurrency primitives (goroutines and channels), libraries (<code>sync</code> and <code>context</code>), and best practices.
     </p>,
-    <p>I'll have it finished this month (February 2021) and will likely reread it before the end of the year.</p>
+    <p>This is definitely a book I'll be rereading in the future.</p>
   ],
   ctaArr: [
     {
@@ -44,6 +47,7 @@ const concurrencyGo: Book = {
 }
 const goBook: Book = {
   read: false,
+  recurring: false,
   Img: () => <GoBook />,
   title: "The Go Programming Language",
   textArr: [
@@ -64,6 +68,7 @@ const goBook: Book = {
 }
 const letsGo: Book = {
   read: true,
+  recurring: false,
   Img: () => <LetsGo />,
   title: "Let's Go",
   textArr: [
@@ -87,15 +92,13 @@ const letsGo: Book = {
   ],
 }
 const pragProg: Book = {
-  read: false,
+  read: true,
+  recurring: true,
   Img: () => <PragProg />,
   title: "The Pragmatic Programmer",
   textArr: [
     <p>
-      It feels providential that I procrastinated on buying this book
-      until the 20th anniversary update came out. Currently, I'm reading a
-      little bit each day, letting their wisdom slowly take root in my
-      practices as a developer.
+      This book is filled with wisdom and best practices that any programmer can use to improve their craft and better provide value with the software they help create. Now that I've finished reading it, I'm slowly going back throught it to really grok its lessons.
     </p>,
   ],
   ctaArr: [
@@ -106,8 +109,27 @@ const pragProg: Book = {
     },
   ],
 }
+const DesertFathers: Book = {
+  read: true,
+  recurring: true,
+  Img: () => <DesertFathersImg />,
+  title: "The Alphabetical Sayings of the Desert Fathers",
+  textArr: [
+    <p>
+      The Desert Fathers of Christianity hold a special place in my heart. Their lessons of self-discipline, humility, perserverance, and not judging others help me not only as a developer, but as a human being. It is why I read some of their sayings at the beginning of each day, to center and focus me for the day ahead, with all the challenges it may bring.
+    </p>,
+  ],
+  ctaArr: [
+    {
+      text: "Buy on Amazon",
+      link:
+        "https://amazon.com/Sayings-Desert-Fathers-Alphabetical-Collection/dp/0879079592",
+    },
+  ],
+}
 const gtd: Book = {
   read: true,
+  recurring: false,
   Img: () => <GTD />,
   title: "Getting Things Done",
   textArr: [
@@ -133,6 +155,7 @@ const gtd: Book = {
 }
 const scrum: Book = {
   read: true,
+  recurring: false,
   Img: () => <Scrum />,
   title: "Learn Go with tests",
   textArr: [
@@ -150,6 +173,7 @@ const scrum: Book = {
 }
 const tddGo: Book = {
   read: true,
+  recurring: false,
   Img: () => <TDDGo />,
   title: "Learn Go with tests",
   textArr: [
@@ -168,6 +192,7 @@ const tddGo: Book = {
 }
 const grokkingAlgos = {
   read: true,
+  recurring: false,
   Img: () => <GrokkingAlgos />,
   title: "Grokking Algorithms",
   textArr: [
@@ -188,6 +213,7 @@ const books: Book[] = [
   letsGo,
   tddGo,
   pragProg,
+  DesertFathers,
   scrum,
   grokkingAlgos,
   gtd,

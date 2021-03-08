@@ -12,19 +12,22 @@ import Book from "../Book"
 
 type Books = JSX.Element[];
 
-export default function ReadingList (){
+export default function ReadingList() {
   const [booksRead, toggleBooksRead] = useState<boolean>(false)
+  const [booksRecurring, toggleBooksRecurring] = useState<boolean>(false)
   let alreadyRead: Books = [];
   let currentlyReading: Books = []
+  let recurringReading: Books = []
 
   books.forEach(book => {
-    const { Img, title, textArr, ctaArr, read } = book
+    const { Img, title, textArr, ctaArr, read, recurring } = book
     let bookComp: JSX.Element = (
       <Book Img={Img} title={title} textArr={textArr} ctaArr={ctaArr} />
     )
-    read
-      ? (alreadyRead = [...alreadyRead, bookComp])
-      : (currentlyReading = [...currentlyReading, bookComp])
+    recurring ? (recurringReading = [...recurringReading, bookComp]) :
+      read
+        ? (alreadyRead = [...alreadyRead, bookComp])
+        : (currentlyReading = [...currentlyReading, bookComp])
   })
   return (
     <Container id="reading" className="site__section">
@@ -34,6 +37,18 @@ export default function ReadingList (){
       </Typography>{" "}
       <hr style={{ border: "1px solid #bababa" }} />
       {currentlyReading}
+      <Grid>
+        <Grid item>
+          <Typography variant="h5" style={{ marginTop: "5%" }}>
+            Recurring Reading
+          </Typography>
+        </Grid>
+        <Grid item>
+          <hr style={{ border: "1px solid #bababa" }} />
+
+          {recurringReading}
+        </Grid>
+      </Grid>
       <Grid>
         <Grid item>
           <Typography variant="h5" style={{ marginTop: "5%" }}>

@@ -15,7 +15,7 @@ type Project = {
   languages: string,
   content: (string | JSX.Element)[],
   links: Links[],
-  current: boolean,
+  current: boolean
 }
 
 
