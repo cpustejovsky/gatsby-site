@@ -18,15 +18,55 @@ type Project = {
   current: boolean
 }
 
+const customSortGo: Project = {
+  name: "customSortGo",
+  title: "CS:GO (Custom Sort: Go)",
+  languages: "Go",
+  content: [
+    <p>Frustrated with some whiteboard interviews I encountered, I decided to start making a repo to collect code that sorts, reverses, etc.</p>,
+    <p>This allowed me to learn how to set up benchmark tests to see which reversal algorithm was faster.</p>,
+    <p>Also, trying to set up a generic sorting function, unsurprisingly, gave me an appreciation for Go's upcoming inclusion of{" "}
+      <a
+        rel="noreferrer noopener"
+        target="_blank"
+        href="https://quii.gitbook.io/learn-go-with-tests/meta/intro-to-generics"
+      >
+        Generics
+      </a>.
+    </p>
+  ],
+  links: [
+    {
+      text:
+        "Code",
+      link: "https://github.com/cpustejovsky/customsortgo",
+    },
+    {
+      text:
+        "Benchmark Tests",
+      link: "https://github.com/cpustejovsky/customsortgo/blob/main/string_test.go",
+    },
+  ],
+  current: true
+}
 
 
 const twitterBot: Project = {
   name: "twitterBot",
   title: "Twitter Bot",
   languages: "Go",
-  content: [`My first Go application, this Twitter bot gives me less
-  reasons to check Twitter by sending me udpates from
-  people I want to keep up with.`],
+  content: [
+    <p>My first Go application, this Twitter bot gives me less
+  reasons to check Twitter by sending me updates from
+  people I want to keep up with.</p>,
+    <p>Since then, with the help of the amazing people on the{" "}
+      <a
+        rel="noreferrer noopener"
+        target="_blank"
+        href="https://gophers.slack.com/"
+      >Gophers Slack Channel</a>, I was able to refactor it to better use Go's concurrency primitives (goroutines and channels).
+    </p>
+  ],
   links: [
     {
       text:
@@ -106,7 +146,7 @@ const lifeTogetherCalculator: Project = {
   </p>,
     <p>
       Most recently, I've rebuilt the app in React and allowed it to
-      calculate any kind of frienship or personal relationship.
+      calculate any kind of friendship or personal relationship.
   </p>
   ],
   links: [
@@ -121,7 +161,7 @@ const lifeTogetherCalculator: Project = {
       link: "https://github.com/cpustejovsky/life-together-calculator"
     },
   ],
-  current: true
+  current: false
 }
 
 const blog: Project = {
@@ -219,12 +259,13 @@ const gdprToggler: Project = {
 const projects: Project[] = [
   estuary,
   twitterBot,
+  customSortGo,
   lifeTogetherCalculator,
   headlessCms,
   gdprToggler,
   dynoWaker,
   blog
-  
+
 
 ]
 
